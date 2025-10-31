@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in South Saint Paul, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header/Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.05)" points="0,0 1000,300 1000,1000 0,700"/></svg>');
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+
+        /* CTA Section */
+        .cta-primary {
+            background: #dc2626;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .cta-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #dc2626 0%, #ef4444 100%);
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-primary h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-primary p {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            color: #dc2626;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-phone:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .btn-website {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-website:hover {
+            background: white;
+            color: #dc2626;
+            transform: translateY(-3px);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 5px solid #3b82f6;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .service-card h2 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: #3b82f6;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .service-card p {
+            color: #64748b;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .footer h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .cta-primary h2 {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-phone, .btn-website {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Roofing Services in South Saint Paul, MN: Roof Replacement, Installation & Repair</h1>
+                <p>Trust Perfect Exteriors of Minnesota for all your roofing needs in South Saint Paul. Our expert team provides top-quality roof replacement, installation, and repair services with over a decade of experience serving the Twin Cities area. We're committed to protecting your home with durable, professional roofing solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Primary CTA -->
+    <section class="cta-primary">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Protect Your Home?</h2>
+                <p>Get a free estimate today from South Saint Paul's trusted roofing experts!</p>
+                <div class="cta-buttons">
+                    <a href="tel:952-920-9520" class="btn-phone">
+                        📞 Call (952) 920-9520
+                    </a>
+                    <a href="https://www.trinityexteriors.com/service-area/south-saint-paul-mn/" target="_blank" class="btn-website">
+                        🌐 Learn More Online
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <h2>
+                        <div class="service-icon">🏠</div>
+                        Roof Replacement
+                    </h2>
+                    <p>When your roof has reached the end of its lifespan, our complete roof replacement services ensure your South Saint Paul home gets maximum protection. We use premium materials and proven installation techniques to deliver roofing systems that withstand Minnesota's harsh weather conditions. Our team handles everything from material selection to final cleanup, making the replacement process seamless and stress-free for homeowners.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2>
+                        <div class="service-icon">🔨</div>
+                        Roof Installation
+                    </h2>
+                    <p>Whether you're building a new home or adding an addition in South Saint Paul, our professional roof installation services provide the foundation for decades of protection. We work with all major roofing materials including asphalt shingles, metal roofing, and tile systems. Our certified installers follow manufacturer specifications and local building codes to ensure your new roof meets the highest standards for durability and performance.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2>
+                        <div class="service-icon">🔧</div>
+                        Roof Repair
+                    </h2>
+                    <p>Don't let minor roof issues become major problems. Our comprehensive roof repair services address everything from storm damage and missing shingles to flashing repairs and gutter maintenance. We provide emergency repair services for South Saint Paul residents and offer thorough inspections to identify potential issues before they compromise your home's integrity. Fast, reliable repairs that extend your roof's lifespan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <h3>Perfect Exteriors of Minnesota</h3>
+            <p>Serving South Saint Paul and the Twin Cities Area</p>
+            <p>Call (952) 920-9520 for Your Free Estimate</p>
+        </div>
+    </section>
+</body>
+</html>

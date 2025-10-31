@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Roseville, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f8f9fa" width="1200" height="600"/><path fill="%23dee2e6" d="M0 400l200-50 200 25 200-30 200 40 200-20 200 15v220H0z"/><path fill="%236c757d" d="M200 350l200 25 200-30 200 40 200-20 200 15v190H200z"/></svg>');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
+        }
+
+        .hero-intro {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 35px;
+            background: white;
+            color: #ff6b6b;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 3px solid transparent;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background: #ff6b6b;
+            color: white;
+            border-color: white;
+        }
+
+        .phone-btn {
+            background: #28a745;
+            color: white;
+        }
+
+        .phone-btn:hover {
+            background: #218838;
+            color: white;
+            border-color: #28a745;
+        }
+
+        .services {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #dee2e6;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .service-card h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .service-card:hover h2 {
+            color: white;
+        }
+
+        .service-card p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            transition: color 0.3s ease;
+        }
+
+        .service-card:hover p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            background: white;
+            color: #667eea;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-intro {
+                font-size: 1.1rem;
+            }
+
+            .cta-content h2 {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 90%;
+                max-width: 300px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        .floating-contact {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #28a745;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 5px 20px rgba(40, 167, 69, 0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .floating-contact:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(40, 167, 69, 0.6);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Roofing Services in Roseville, MN: Roof Replacement, Installation & Repair</h1>
+                <p class="hero-intro">When you need trusted roofing professionals in Roseville, Minnesota, Perfect Exteriors of Minnesota delivers exceptional craftsmanship and reliable service. Our experienced team specializes in comprehensive roofing solutions, from complete roof replacements to expert repairs and new installations. We understand the unique challenges that Minnesota weather brings to your roof, and we're committed to protecting your home with quality materials and superior workmanship that stands the test of time.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Protect Your Home?</h2>
+                <p>Don't wait for roof problems to get worse. Contact Perfect Exteriors of Minnesota today for professional roofing services in Roseville, MN. Our expert team is ready to help with all your roof repair, replacement, and installation needs.</p>
+                <div class="cta-buttons">
+                    <a href="tel:7633437989" class="btn phone-btn">📞 Call (763) 343-7989</a>
+                    <a href="https://www.perfectexteriorsmn.com/quality-roofing-contractor-in-roseville-minnesota/" target="_blank" class="btn">Learn More About Our Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="container">
+            <h2 class="section-title">Our Roofing Services</h2>
+            <p class="section-subtitle">Professional roofing solutions tailored to meet your specific needs in Roseville, MN</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan, our complete roof replacement services ensure your home gets the protection it deserves. We use only premium materials and proven installation techniques to deliver a roof that will protect your family and investment for decades to come. Our replacement process includes thorough inspection, proper disposal of old materials, and meticulous installation of your new roofing system.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h2>Roof Installation</h2>
+                    <p>Building a new home or adding an addition? Our expert roof installation services provide the foundation of protection your new construction needs. We work with builders and homeowners to install roofing systems that complement your home's design while providing superior weather protection. From material selection to final installation, we ensure every detail meets the highest standards of quality and craftsmanship.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h2>Roof Repair</h2>
+                    <p>Don't let small roofing problems become major headaches. Our professional roof repair services address issues quickly and effectively, from minor leaks and missing shingles to storm damage and flashing problems. We provide honest assessments and reliable repairs that extend your roof's life and protect your home. Emergency repair services are available to address urgent issues that can't wait.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="tel:7633437989" class="floating-contact">Call Now</a>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Brooklyn Park, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin: 40px 0;
+            padding: 60px 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-title {
+            font-size: 3.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        
+        .intro-text {
+            font-size: 1.3rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #555;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+        
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .cta-phone {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px 0;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-phone:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-link {
+            color: white;
+            text-decoration: underline;
+            font-size: 1.1rem;
+            transition: opacity 0.3s ease;
+        }
+        
+        .cta-link:hover {
+            opacity: 0.8;
+        }
+        
+        .services-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            margin: 40px 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 30px 0;
+            border-left: 5px solid #3498db;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s;
+        }
+        
+        .service-card:hover::before {
+            left: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-title {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .service-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .benefit-item {
+            background: rgba(52, 152, 219, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .benefit-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .footer-cta {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+        
+        .footer-cta h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-section {
+                padding: 40px 20px;
+            }
+            
+            .cta-phone {
+                font-size: 2rem;
+            }
+            
+            .service-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <h1 class="hero-title">Roofing Services in Brooklyn Park, MN: Roof Replacement, Installation & Repair</h1>
+            <p class="intro-text">
+                When it comes to protecting your home in Brooklyn Park, Minnesota, your roof is your first line of defense against harsh weather conditions. Whether you're dealing with storm damage, aging materials, or planning a new construction project, <span class="highlight">Perfect Exteriors of Minnesota</span> delivers exceptional roofing solutions tailored to your specific needs. Our experienced team combines quality craftsmanship with premium materials to ensure your roof stands strong for decades to come.
+            </p>
+            
+            <div class="cta-section">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p>Don't wait until it's too late! Contact Perfect Exteriors of Minnesota today for expert roofing services in Brooklyn Park, MN.</p>
+                <a href="tel:763-343-7989" class="cta-phone">📞 (763) 343-7989</a>
+                <p>Or <a href="https://www.perfectexteriorsmn.com/roofing-contractor-brooklyn-park-mn/" class="cta-link" target="_blank">visit our website</a> to learn more about our comprehensive roofing services!</p>
+            </div>
+        </div>
+        
+        <div class="services-section">
+            <h2 class="service-title">🏠 Roof Replacement</h2>
+            <div class="service-card">
+                <p class="service-description">
+                    Is your roof showing signs of significant wear, multiple leaks, or storm damage? Our comprehensive roof replacement services in Brooklyn Park provide you with a completely new roofing system designed to last. We work with high-quality materials including asphalt shingles, metal roofing, and architectural shingles to match your home's style and your budget. Our expert team handles everything from the initial inspection and material selection to proper disposal of old materials and final cleanup.
+                </p>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🛡️</div>
+                        <strong>Enhanced Protection</strong>
+                        <p>Complete weather barrier</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💰</div>
+                        <strong>Increased Home Value</strong>
+                        <p>Boost property worth</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">⚡</div>
+                        <strong>Energy Efficiency</strong>
+                        <p>Lower utility bills</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="service-title">🔨 Roof Installation</h2>
+            <div class="service-card">
+                <p class="service-description">
+                    Building a new home or addition in Brooklyn Park? Our professional roof installation services ensure your new roof is built to last from day one. We specialize in various roofing systems and work closely with builders, contractors, and homeowners to deliver precise installation that meets all local building codes and manufacturer specifications. From structural assessment to final inspection, we guarantee quality workmanship that protects your investment.
+                </p>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📐</div>
+                        <strong>Precision Installation</strong>
+                        <p>Code-compliant work</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎯</div>
+                        <strong>Custom Solutions</strong>
+                        <p>Tailored to your needs</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✅</div>
+                        <strong>Quality Guarantee</strong>
+                        <p>Backed by warranty</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="service-title">🔧 Roof Repair</h2>
+            <div class="service-card">
+                <p class="service-description">
+                    Don't let minor roofing issues become major problems! Our prompt roof repair services in Brooklyn Park address everything from missing shingles and small leaks to damaged flashing and gutter issues. We understand that roofing emergencies can't wait, which is why we offer fast response times and reliable solutions that restore your roof's integrity. Whether it's storm damage, wear and tear, or sudden leaks, our experienced technicians provide lasting repairs that extend your roof's lifespan.
+                </p>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">⚡</div>
+                        <strong>Fast Response</strong>
+                        <p>Quick emergency service</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎯</div>
+                        <strong>Targeted Solutions</strong>
+                        <p>Fix specific issues</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💵</div>
+                        <strong>Cost-Effective</strong>
+                        <p>Prevent bigger problems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-cta">
+            <h3>Your Trusted Brooklyn Park Roofing Partner</h3>
+            <p>Perfect Exteriors of Minnesota has been serving Brooklyn Park and the surrounding Twin Cities metro area with reliable, professional roofing services. Contact us today for a free consultation and discover why homeowners trust us with their most important investment.</p>
+        </div>
+    </div>
+</body>
+</html>

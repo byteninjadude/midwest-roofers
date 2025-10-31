@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Hastings, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><rect width="1000" height="600" fill="%23f0f4f8"/><polygon points="100,200 300,100 500,150 700,80 900,140 900,600 100,600" fill="%23e2e8f0" opacity="0.3"/><polygon points="0,300 200,250 400,280 600,200 800,250 1000,220 1000,600 0,600" fill="%23cbd5e0" opacity="0.4"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            padding: 3rem 0;
+            margin: 2rem 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .cta-content {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-section h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .phone-cta {
+            display: inline-block;
+            background: white;
+            color: #ff6b35;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .phone-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            background: #f8f9fa;
+        }
+
+        .website-cta {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+
+        .website-cta:hover {
+            background: white;
+            color: #ff6b35;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Main Content */
+        .main-content {
+            background: white;
+            padding: 4rem 0;
+            margin: 2rem 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .service-section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            transition: all 0.3s ease;
+        }
+
+        .service-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-section h2 {
+            font-size: 2.5rem;
+            color: #1e3c72;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            border-bottom: 3px solid #ff6b35;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .service-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        .service-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .feature-item h4 {
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        /* Footer CTA */
+        .footer-cta {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+
+        .footer-cta h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cta-section h3 {
+                font-size: 1.8rem;
+            }
+
+            .phone-cta, .website-cta {
+                display: block;
+                margin: 0.5rem 0;
+                padding: 0.8rem 1.5rem;
+                font-size: 1.1rem;
+            }
+
+            .service-section h2 {
+                font-size: 2rem;
+            }
+
+            .service-features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            text-align: center;
+            color: white;
+        }
+
+        .trust-item .number {
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .trust-item .text {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Roofing Services in Hastings, MN: Roof Replacement, Installation & Repair</h1>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Professional Roofing Services in Hastings, MN</h2>
+                <p>When you need reliable roofing services in Hastings, Minnesota, Perfect Exteriors of Minnesota is your trusted local partner. We specialize in comprehensive roofing solutions including roof replacement, installation, and repair services. Our experienced team uses premium materials and proven techniques to protect your home with a roof that stands the test of time and Minnesota's challenging weather conditions.</p>
+                
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <span class="number">15+</span>
+                        <span class="text">Years Experience</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="number">100%</span>
+                        <span class="text">Satisfaction Guaranteed</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="number">24/7</span>
+                        <span class="text">Emergency Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="cta-section">
+            <div class="cta-content">
+                <h3>Ready to Protect Your Home?</h3>
+                <p>Don't wait for small roofing problems to become major headaches. Contact Perfect Exteriors of Minnesota today for expert roof repair, replacement, or installation services in Hastings, MN.</p>
+                
+                <a href="tel:952-920-9520" class="phone-cta">📞 Call (952) 920-9520</a>
+                <a href="https://www.trinityexteriors.com/service-area/hastings-mn/" class="website-cta" target="_blank">Learn More About Our Services →</a>
+            </div>
+        </section>
+
+        <main class="main-content">
+            <div class="service-section">
+                <h2>Roof Replacement</h2>
+                <p>When your roof has reached the end of its lifespan or has sustained significant damage, a complete roof replacement is often the most cost-effective long-term solution. Perfect Exteriors of Minnesota specializes in full roof replacement services in Hastings, MN, using only the highest quality materials and industry-leading installation techniques.</p>
+                
+                <p>Our roof replacement process begins with a thorough inspection and assessment of your current roofing system. We'll help you choose the best roofing materials for your home's style, budget, and the Minnesota climate. From asphalt shingles to metal roofing, we work with top manufacturers to ensure your new roof provides decades of reliable protection.</p>
+
+                <div class="service-features">
+                    <div class="feature-item">
+                        <h4>🏠 Complete System Replacement</h4>
+                        <p>Full tear-off and replacement including decking inspection and repair when needed.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🛡️ Premium Materials</h4>
+                        <p>High-quality shingles, underlayment, and accessories designed for Minnesota weather.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>⚡ Efficient Installation</h4>
+                        <p>Professional crews complete most residential replacements in 1-2 days.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>📋 Warranty Protection</h4>
+                        <p>Comprehensive warranties on both materials and workmanship for your peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-section">
+                <h2>Roof Installation</h2>
+                <p>Whether you're building a new home or adding an addition to your existing property in Hastings, MN, Perfect Exteriors of Minnesota provides expert roof installation services. We understand that your roof is one of your home's most critical components, and we take pride in installing roofing systems that provide superior protection and enhance your property's value.</p>
+                
+                <p>Our new roof installation services include working closely with builders, architects, and homeowners to ensure the roofing system meets all specifications and local building codes. We handle everything from initial design consultation to final cleanup, making the process as smooth as possible for our customers.</p>
+
+                <div class="service-features">
+                    <div class="feature-item">
+                        <h4>🏗️ New Construction</h4>
+                        <p>Complete roofing systems for new homes and commercial buildings.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🏡 Home Additions</h4>
+                        <p>Seamless roof installation for room additions and home expansions.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>📐 Custom Design</h4>
+                        <p>Tailored roofing solutions to match your home's architectural style.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>✅ Code Compliance</h4>
+                        <p>All installations meet or exceed local building codes and regulations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-section">
+                <h2>Roof Repair</h2>
+                <p>Don't let minor roofing issues turn into major problems. Perfect Exteriors of Minnesota offers comprehensive roof repair services in Hastings, MN, addressing everything from missing shingles and small leaks to storm damage and aging materials. Our experienced technicians can quickly identify and fix roofing problems before they cause costly interior damage to your home.</p>
+                
+                <p>We provide emergency roof repair services for urgent situations and also handle routine maintenance and preventive repairs. Our team uses high-quality materials that match your existing roof, ensuring repairs blend seamlessly with your current roofing system while providing long-lasting protection.</p>
+
+                <div class="service-features">
+                    <div class="feature-item">
+                        <h4>🚨 Emergency Repairs</h4>
+                        <p>24/7 emergency service for urgent roofing problems and storm damage.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🔍 Leak Detection</h4>
+                        <p>Advanced techniques to locate and repair even the most elusive roof leaks.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🌪️ Storm Damage</h4>
+                        <p>Comprehensive storm damage assessment and insurance claim assistance.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🔧 Preventive Maintenance</h4>
+                        <p>Regular maintenance services to extend your roof's lifespan and prevent problems.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="footer-cta">
+            <div class="container">
+                <h3>Choose Perfect Exteriors of Minnesota for Your Roofing Needs</h3>
+                <p>Experience the difference that professional roofing services make. Contact us today for a free estimate on your roofing project in Hastings, MN.</p>
+                <br>
+                <a href="tel:952-920-9520" class="phone-cta">📞 (952) 920-9520</a>
+                <a href="https://www.trinityexteriors.com/service-area/hastings-mn/" class="website-cta" target="_blank">Visit Our Website</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

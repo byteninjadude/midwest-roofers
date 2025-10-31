@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Carver, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            color: #5a6c7d;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-content h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            text-align: center;
+            min-width: 250px;
+        }
+
+        .btn-phone {
+            background: #fff;
+            color: #e74c3c;
+            border-color: #fff;
+        }
+
+        .btn-phone:hover {
+            background: #e74c3c;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-website {
+            background: transparent;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .btn-website:hover {
+            background: #fff;
+            color: #e74c3c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .services {
+            background: #fff;
+            padding: 60px 0;
+        }
+
+        .service {
+            margin-bottom: 60px;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid #3498db;
+        }
+
+        .service:nth-child(even) {
+            border-left-color: #27ae60;
+        }
+
+        .service:nth-child(3) {
+            border-left-color: #f39c12;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .service:nth-child(even) .service-icon {
+            background: linear-gradient(135deg, #27ae60, #229954);
+        }
+
+        .service:nth-child(3) .service-icon {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+        }
+
+        .service p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a6c7d;
+        }
+
+        .trust-indicators {
+            background: #2c3e50;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .trust-item {
+            padding: 20px;
+        }
+
+        .trust-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+
+        footer {
+            background: #1a252f;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                min-width: 280px;
+            }
+
+            h2 {
+                font-size: 1.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .service {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Roofing Services in Carver, MN: Roof Replacement, Installation & Repair</h1>
+            <p class="intro">
+                When your home in Carver, Minnesota needs reliable roofing services, Perfect Exteriors of Minnesota delivers exceptional craftsmanship and unmatched customer service. With years of experience serving the Carver community, our expert team specializes in comprehensive roofing solutions that protect your home and enhance its value. From emergency repairs to complete roof replacements, we use only the highest quality materials and proven techniques to ensure your roof stands strong against Minnesota's challenging weather conditions.
+            </p>
+        </div>
+    </header>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h3>Ready to Protect Your Carver Home?</h3>
+                <p>Don't wait for roofing problems to get worse. Get your free estimate today!</p>
+                <div class="cta-buttons">
+                    <a href="tel:7633437989" class="btn btn-phone">📞 Call (763) 343-7989</a>
+                    <a href="https://www.perfectexteriorsmn.com/roofing-contractor-carver-mn/" class="btn btn-website" target="_blank">🌐 Learn More Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="service">
+                <h2>
+                    <div class="service-icon">R</div>
+                    Roof Replacement
+                </h2>
+                <p>
+                    When your Carver home's roof has reached the end of its lifespan, Perfect Exteriors of Minnesota provides complete roof replacement services that combine durability with aesthetic appeal. Our experienced team conducts thorough inspections to assess your roof's condition and recommends the best materials for Minnesota's climate. We specialize in asphalt shingles, metal roofing, and tile installations, ensuring your new roof provides decades of reliable protection. From obtaining permits to final cleanup, we handle every aspect of your roof replacement project with professional expertise and attention to detail.
+                </p>
+            </div>
+
+            <div class="service">
+                <h2>
+                    <div class="service-icon">I</div>
+                    Roof Installation
+                </h2>
+                <p>
+                    Whether you're building a new home in Carver or adding an addition to your existing property, Perfect Exteriors of Minnesota delivers expert roof installation services that set the foundation for long-term protection. Our skilled installers work closely with builders, architects, and homeowners to ensure proper ventilation, insulation, and weatherproofing from the ground up. We use premium materials and follow strict installation standards to create roofing systems that exceed Minnesota building codes. Every installation comes with comprehensive warranties and our commitment to superior craftsmanship.
+                </p>
+            </div>
+
+            <div class="service">
+                <h2>
+                    <div class="service-icon">⚒</div>
+                    Roof Repair
+                </h2>
+                <p>
+                    Don't let small roofing issues become major problems. Perfect Exteriors of Minnesota offers prompt, professional roof repair services throughout Carver, MN. Our repair specialists quickly identify and fix leaks, damaged shingles, flashing issues, and storm damage before they compromise your home's integrity. We provide emergency repair services for urgent situations and offer detailed inspections to catch potential problems early. Using high-quality materials and proven repair techniques, we restore your roof's performance and extend its lifespan, saving you money in the long run.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-indicators">
+        <div class="container">
+            <h3>Why Carver Homeowners Choose Perfect Exteriors of Minnesota</h3>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <h4>Local Expertise</h4>
+                    <p>Deep understanding of Carver's unique climate and building requirements</p>
+                </div>
+                <div class="trust-item">
+                    <h4>Licensed & Insured</h4>
+                    <p>Fully licensed contractors with comprehensive insurance coverage</p>
+                </div>
+                <div class="trust-item">
+                    <h4>Quality Materials</h4>
+                    <p>Premium roofing materials from trusted manufacturers</p>
+                </div>
+                <div class="trust-item">
+                    <h4>Customer Satisfaction</h4>
+                    <p>Hundreds of satisfied customers throughout the Carver area</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Perfect Exteriors of Minnesota. Serving Carver, MN and surrounding areas.</p>
+            <p>Call <strong>(763) 343-7989</strong> for all your roofing needs.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Company in Becker, MN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c5aa0 0%, #1e3d72 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><defs><pattern id="roof" patternUnits="userSpaceOnUse" width="100" height="20"><path d="M0 20L50 0L100 20" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="20" fill="url(%23roof)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .intro {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+            opacity: 0.95;
+        }
+        
+        .cta-primary {
+            background: linear-gradient(135deg, #ff6b35 0%, #e5501b 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 60px auto;
+            max-width: 800px;
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.3);
+            transform: translateY(0);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.4);
+        }
+        
+        .cta-primary h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .cta-primary p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-phone {
+            background: white;
+            color: #ff6b35;
+            border: 2px solid white;
+        }
+        
+        .btn-phone:hover {
+            background: #ff6b35;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .btn-website {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-website:hover {
+            background: white;
+            color: #ff6b35;
+            transform: translateY(-2px);
+        }
+        
+        main {
+            padding: 80px 0;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 5px solid #2c5aa0;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-card h2 {
+            color: #2c5aa0;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .service-card p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .service-card li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+            color: #555;
+        }
+        
+        .service-card li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .phone-icon, .web-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        
+        footer {
+            background: #2c5aa0;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        footer p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .footer-phone {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffd700;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .intro {
+                font-size: 1.1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Roofing Services in Becker, MN: Roof Replacement, Installation & Repair</h1>
+            <p class="intro">
+                When you need reliable roofing services in Becker, Minnesota, Perfect Exteriors of Minnesota delivers exceptional craftsmanship and professional service you can trust. Our experienced team specializes in comprehensive roofing solutions for residential and commercial properties throughout the Becker area.
+            </p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="cta-primary">
+            <h3>Ready to Protect Your Home?</h3>
+            <p>Get expert roofing services from Becker's trusted professionals</p>
+            <div class="cta-buttons">
+                <a href="tel:7633437989" class="btn btn-phone">
+                    <svg class="phone-icon" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    Call (763) 343-7989
+                </a>
+                <a href="https://www.perfectexteriorsmn.com/roofing-company-becker-minnesota/" class="btn btn-website">
+                    <svg class="web-icon" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                    Learn More Online
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="services">
+                <div class="service-card">
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan or suffered extensive damage, our complete roof replacement services provide a fresh start with modern, durable materials and expert installation.</p>
+                    <p>Our comprehensive roof replacement process includes thorough inspection, material selection guidance, and professional installation using industry-leading techniques. We work with all major roofing materials and ensure your new roof provides decades of reliable protection.</p>
+                    <ul>
+                        <li>Complete tear-off and disposal of old roofing</li>
+                        <li>Structural assessment and repairs</li>
+                        <li>Premium materials and manufacturer warranties</li>
+                        <li>Energy-efficient roofing solutions</li>
+                        <li>Professional cleanup and debris removal</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Installation</h2>
+                    <p>For new construction projects and additions in Becker, MN, our roof installation services ensure your new structure is topped with a professionally installed, weather-resistant roofing system built to last.</p>
+                    <p>We collaborate closely with builders, contractors, and homeowners to deliver timely, high-quality roof installations that meet all building codes and exceed industry standards. Our team is experienced with various roofing materials and architectural styles.</p>
+                    <ul>
+                        <li>New construction roof installation</li>
+                        <li>Addition and expansion roofing</li>
+                        <li>Code-compliant installation practices</li>
+                        <li>Coordination with construction schedules</li>
+                        <li>Material warranties and workmanship guarantees</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Repair</h2>
+                    <p>Don't let minor roofing issues become major problems. Our prompt and professional roof repair services address leaks, damaged shingles, storm damage, and other roofing concerns to protect your Becker home.</p>
+                    <p>From emergency leak repairs to routine maintenance, our experienced technicians diagnose problems accurately and provide lasting solutions. We handle everything from single shingle replacement to comprehensive storm damage restoration.</p>
+                    <ul>
+                        <li>Emergency leak detection and repair</li>
+                        <li>Storm and hail damage restoration</li>
+                        <li>Shingle replacement and repair</li>
+                        <li>Gutter and downspout services</li>
+                        <li>Preventive maintenance programs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>Perfect Exteriors of Minnesota</h3>
+            <p>Your Trusted Roofing Partner in Becker, MN</p>
+            <p class="footer-phone">Call Today: (763) 343-7989</p>
+            <p>Visit: <a href="https://www.perfectexteriorsmn.com/roofing-company-becker-minnesota/" style="color: #ffd700; text-decoration: none;">perfectexteriorsmn.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>

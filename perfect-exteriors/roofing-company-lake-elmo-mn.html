@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Lake Elmo, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="roof" patternUnits="userSpaceOnUse" width="20" height="20"><path d="M0,20 L10,10 L20,20 Z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23roof)"/></svg>') repeat;
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: slideInUp 1s ease-out;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            animation: slideInUp 1s ease-out 0.2s both;
+        }
+
+        .intro-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #475569;
+            line-height: 1.8;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.05) 10px,
+                rgba(255,255,255,0.05) 20px
+            );
+            animation: move 20s linear infinite;
+        }
+
+        @keyframes move {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #dc2626;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .phone-icon, .web-icon {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .services-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(59,130,246,0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            font-size: 2rem;
+            color: white;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .service-card h2 {
+            font-size: 1.8rem;
+            color: #1e40af;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .service-card p {
+            color: #64748b;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            color: #1e40af;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        .contact-footer {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+
+        .contact-item i {
+            margin-right: 10px;
+            font-size: 1.3rem;
+            color: #3b82f6;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 280px;
+                justify-content: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #fbbf24, #f59e0b);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Roofing Services in Lake Elmo, MN: Roof Replacement, Installation & Repair</h1>
+            <p class="hero-subtitle">Expert roofing solutions for your Lake Elmo home with <span class="highlight">Perfect Exteriors of Minnesota</span></p>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <div class="container">
+            <p class="intro-text">
+                When it comes to protecting your Lake Elmo home, your roof is your first line of defense against Minnesota's harsh weather conditions. Perfect Exteriors of Minnesota brings decades of roofing expertise to the Lake Elmo community, providing comprehensive roofing services that combine quality craftsmanship with reliable, long-lasting results. Whether you need emergency repairs, a complete roof replacement, or new installation, our experienced team delivers exceptional service tailored to the unique needs of Lake Elmo homeowners.
+            </p>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Protect Your Lake Elmo Home?</h2>
+                <p class="cta-text">Don't wait for roof problems to get worse. Contact Perfect Exteriors of Minnesota today for expert roofing services in Lake Elmo, MN.</p>
+                
+                <div class="cta-buttons">
+                    <a href="tel:9529209520" class="btn btn-primary">
+                        <span class="phone-icon">📞</span>
+                        Call (952) 920-9520
+                    </a>
+                    <a href="https://www.trinityexteriors.com/service-area/lake-elmo-mn/" target="_blank" class="btn btn-secondary">
+                        <span class="web-icon">🌐</span>
+                        Learn More Online
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Lake Elmo Roofing Services</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h2>Roof Replacement</h2>
+                    <p>When your Lake Elmo home's roof has reached the end of its lifespan, Perfect Exteriors of Minnesota provides complete roof replacement services using premium materials and proven installation techniques.</p>
+                    <p>Our roof replacement process includes thorough inspection, material selection guidance, professional removal of old roofing, and expert installation of your new roof system designed to withstand Minnesota's challenging climate.</p>
+                    <p>We work with all major roofing materials including asphalt shingles, metal roofing, and tile systems, ensuring your new roof provides decades of reliable protection for your Lake Elmo property.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h2>Roof Installation</h2>
+                    <p>For new construction and additions in Lake Elmo, Perfect Exteriors of Minnesota offers comprehensive roof installation services that meet all local building codes and exceed industry standards.</p>
+                    <p>Our installation team brings extensive experience with Lake Elmo's specific weather patterns and building requirements, ensuring your new roof is properly designed and installed for optimal performance and longevity.</p>
+                    <p>From initial planning and permit assistance to final inspection, we handle every aspect of your roof installation project with precision and attention to detail that Lake Elmo homeowners trust.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h2>Roof Repair</h2>
+                    <p>Don't let minor roof issues become major problems. Perfect Exteriors of Minnesota provides prompt, professional roof repair services throughout Lake Elmo, addressing everything from storm damage to general wear and tear.</p>
+                    <p>Our repair specialists quickly identify and fix leaks, damaged shingles, flashing issues, and other roofing problems that could compromise your home's protection and energy efficiency.</p>
+                    <p>Available for emergency repairs and routine maintenance, we help Lake Elmo homeowners extend their roof's lifespan and maintain their property's value with quality repair solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-footer">
+        <div class="container">
+            <h3>Contact Perfect Exteriors of Minnesota Today</h3>
+            <p>Serving Lake Elmo and surrounding communities with exceptional roofing services</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i>📞</i>
+                    <span>(952) 920-9520</span>
+                </div>
+                <div class="contact-item">
+                    <i>🌐</i>
+                    <span>trinityexteriors.com</span>
+                </div>
+                <div class="contact-item">
+                    <i>📍</i>
+                    <span>Serving Lake Elmo, MN</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

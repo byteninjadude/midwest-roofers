@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Burnsville, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .phone {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fbbf24;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(59, 130, 246, 0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23374151" width="1200" height="600"/><polygon fill="%23475569" points="0,600 400,200 800,400 1200,100 1200,600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section {
+            background: #dc2626;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-content h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-primary {
+            background: #fbbf24;
+            color: #1e3a8a;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #dc2626;
+        }
+
+        .services {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .service-card h2 {
+            color: #1e3a8a;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 10px;
+        }
+
+        .service-card p {
+            margin-bottom: 15px;
+            color: #4b5563;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .service-features li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-features li::before {
+            content: "✓";
+            color: #10b981;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .contact-section {
+            background: #374151;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-item h4 {
+            color: #fbbf24;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .footer {
+            background: #1e3a8a;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .header-contact {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Perfect Exteriors of Minnesota</div>
+                <div class="header-contact">
+                    <div class="phone">(952) 920-9520</div>
+                    <div>Serving Burnsville, MN & Surrounding Areas</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Roofing Services in Burnsville, MN: Roof Replacement, Installation & Repair</h1>
+            <p>Trust Perfect Exteriors of Minnesota for all your roofing needs in Burnsville and surrounding areas. We provide expert roof replacement, installation, and repair services with quality materials and professional craftsmanship. Our experienced team is committed to protecting your home with reliable, long-lasting roofing solutions.</p>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h3>Ready to Protect Your Burnsville Home?</h3>
+                <p>Don't wait until small roofing problems become major headaches. Contact Perfect Exteriors of Minnesota today for professional roofing services you can trust.</p>
+                <div class="cta-buttons">
+                    <a href="tel:(952)920-9520" class="btn btn-primary">Call (952) 920-9520</a>
+                    <a href="https://www.trinityexteriors.com/service-area/burnsville-mn/" class="btn btn-secondary" target="_blank">Learn More Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="service-grid">
+                <div class="service-card">
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan or suffered extensive damage, our complete roof replacement services ensure your Burnsville home gets the protection it deserves. We work with top-quality materials and provide comprehensive solutions tailored to Minnesota's climate.</p>
+                    <p>Our roof replacement process includes thorough inspection, proper removal of old materials, structural assessment, and installation of your new roofing system with proper ventilation and insulation.</p>
+                    <ul class="service-features">
+                        <li>Complete tear-off and replacement</li>
+                        <li>Premium shingle and material options</li>
+                        <li>Structural repairs when needed</li>
+                        <li>Updated ventilation systems</li>
+                        <li>Warranty protection</li>
+                        <li>Insurance claim assistance</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Installation</h2>
+                    <p>For new construction projects in Burnsville, Perfect Exteriors of Minnesota provides expert roof installation services. We understand the importance of proper installation from the ground up, ensuring your new roof provides decades of reliable protection.</p>
+                    <p>Our installation team follows industry best practices and local building codes, using advanced techniques and quality materials to create a roofing system that stands up to Minnesota's harsh weather conditions.</p>
+                    <ul class="service-features">
+                        <li>New construction roofing</li>
+                        <li>Addition and expansion roofing</li>
+                        <li>Multiple roofing material options</li>
+                        <li>Energy-efficient solutions</li>
+                        <li>Code compliance guarantee</li>
+                        <li>Professional project management</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Repair</h2>
+                    <p>Don't let minor roofing issues turn into major problems. Our expert roof repair services in Burnsville address everything from storm damage and leaks to missing shingles and flashing issues. We provide fast, reliable repairs to keep your home protected.</p>
+                    <p>Our experienced technicians quickly diagnose roofing problems and provide cost-effective repair solutions. We handle emergency repairs and routine maintenance to extend your roof's lifespan and prevent costly damage.</p>
+                    <ul class="service-features">
+                        <li>Emergency leak repairs</li>
+                        <li>Storm damage restoration</li>
+                        <li>Shingle replacement</li>
+                        <li>Flashing and gutter repairs</li>
+                        <li>Preventive maintenance</li>
+                        <li>24/7 emergency service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h3>Get Your Free Roofing Quote Today</h3>
+            <p>Ready to get started? Contact Perfect Exteriors of Minnesota for a free, no-obligation quote on your Burnsville roofing project.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Phone</h4>
+                    <p>(952) 920-9520</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Service Area</h4>
+                    <p>Burnsville, MN & Surrounding Areas</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Online</h4>
+                    <p><a href="https://www.trinityexteriors.com/service-area/burnsville-mn/" style="color: #fbbf24;">Visit Our Website</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Perfect Exteriors of Minnesota. Professional Roofing Services in Burnsville, MN.</p>
+        </div>
+    </footer>
+</body>
+</html>

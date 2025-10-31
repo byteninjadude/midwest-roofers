@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Company in Bloomington, MN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #546e7a;
+            font-weight: 300;
+        }
+
+        main {
+            background: white;
+            margin: 2rem 0;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .intro-section {
+            padding: 3rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            text-align: center;
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            color: #495057;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="roof" patternUnits="userSpaceOnUse" width="20" height="20"><path d="M0 20l10-10 10 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23roof)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: white;
+            color: #4CAF50;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background: #f8f9fa;
+        }
+
+        .phone-icon, .web-icon {
+            font-size: 1.2rem;
+        }
+
+        .services-section {
+            padding: 4rem 3rem;
+        }
+
+        .services-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .service-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .service-content {
+            color: #546e7a;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .footer-cta {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .intro-section, .cta-section, .services-section {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="hero-title">Roofing Services in Bloomington, MN: Roof Replacement, Installation & Repair</h1>
+            <p class="hero-subtitle">Professional Roofing Solutions You Can Trust</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro-section">
+            <p class="intro-text">
+                When it comes to protecting your home in Bloomington, Minnesota, your roof is your first line of defense against harsh weather conditions. Perfect Exteriors of Minnesota has been serving the Bloomington community with exceptional roofing services for years, combining expert craftsmanship with premium materials to ensure your roof stands the test of time. Our experienced team of licensed professionals understands the unique challenges that Minnesota weather presents and delivers solutions that keep your family safe, comfortable, and protected year-round.
+            </p>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Protect Your Home?</h2>
+                <p class="cta-text">
+                    Don't wait for small roofing problems to become major headaches. Contact Perfect Exteriors of Minnesota today for professional roof repair, replacement, or installation services in Bloomington, MN.
+                </p>
+                <div class="cta-buttons">
+                    <a href="tel:952-920-9520" class="cta-button">
+                        <span class="phone-icon">📞</span>
+                        Call (952) 920-9520
+                    </a>
+                    <a href="https://www.trinityexteriors.com/service-area/bloomington-mn/" class="cta-button" target="_blank">
+                        <span class="web-icon">🌐</span>
+                        Learn More Online
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2 class="services-title">Our Comprehensive Roofing Services</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 class="service-title">
+                        <div class="service-icon">🔄</div>
+                        Roof Replacement
+                    </h3>
+                    <div class="service-content">
+                        <p>When repairs are no longer sufficient, our comprehensive roof replacement services provide you with a completely new roofing system built to last. We use only the highest quality materials from trusted manufacturers and employ proven installation techniques that ensure maximum durability and weather resistance. Our team conducts thorough inspections to identify all underlying issues, provides detailed estimates with transparent pricing, and manages the entire replacement process from start to finish. Whether you're dealing with storm damage, age-related wear, or want to upgrade to more efficient roofing materials, we deliver exceptional results that enhance both your home's protection and curb appeal.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3 class="service-title">
+                        <div class="service-icon">🏗️</div>
+                        Roof Installation
+                    </h3>
+                    <div class="service-content">
+                        <p>Building a new home or adding an addition in Bloomington? Our professional roof installation services ensure your new structure is properly protected from day one. We work closely with builders, architects, and homeowners to install roofing systems that meet both aesthetic and functional requirements. Our experienced installers are well-versed in all major roofing materials including asphalt shingles, metal roofing, tile, and flat roofing systems. We follow strict safety protocols, adhere to local building codes, and use advanced techniques to ensure proper ventilation, insulation, and water drainage. Every installation comes with comprehensive warranties for your peace of mind.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3 class="service-title">
+                        <div class="service-icon">🔧</div>
+                        Roof Repair
+                    </h3>
+                    <div class="service-content">
+                        <p>Don't let minor roofing issues turn into major problems. Our prompt and reliable roof repair services address everything from missing or damaged shingles to leaks, flashing problems, and gutter issues. We provide emergency repair services for storm damage and offer thorough inspections to identify potential problems before they cause costly interior damage. Our skilled technicians use matching materials and proven repair methods to restore your roof's integrity while maintaining its appearance. We also offer preventive maintenance programs to help extend your roof's lifespan and catch issues early, saving you money in the long run.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-cta">Experience the Perfect Exteriors difference in Bloomington, MN</p>
+            <p class="footer-contact">Call (952) 920-9520 or visit trinityexteriors.com for expert roofing services</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Company in Saint Paul, MN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            line-height: 1.2;
+        }
+
+        .intro {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 50px 40px;
+            margin: 40px 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(231, 76, 60, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-title {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 18px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
+            background: white;
+            color: #e74c3c;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff200;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+            display: block;
+        }
+
+        main {
+            background: white;
+            margin: 20px;
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .service-content {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8e6cf 0%, #dcedc8 100%);
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        footer {
+            background: rgba(44, 62, 80, 0.95);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .intro {
+                font-size: 1.1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            header, main, .cta-section {
+                margin: 10px;
+                padding: 40px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Roofing Services in Saint Paul, MN: Roof Replacement, Installation & Repair</h1>
+            <p class="intro">
+                When you need reliable, professional roofing services in Saint Paul, Minnesota, trust the experts who understand the unique challenges of our local climate. From harsh winters to severe storms, your roof protects what matters most to you. Our experienced team delivers exceptional craftsmanship and uses only the highest quality materials to ensure your roof stands the test of time.
+            </p>
+        </div>
+    </header>
+
+    <div class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Ready to Protect Your Saint Paul Home?</h2>
+            <p class="cta-text">Don't wait for roofing problems to get worse. Contact Perfect Exteriors of Minnesota today for expert roof repair, replacement, or installation services.</p>
+            
+            <span class="phone-number">📞 (952) 920-9520</span>
+            
+            <div class="cta-buttons">
+                <a href="tel:9529209520" class="btn btn-primary">Call Now for Free Estimate</a>
+                <a href="https://www.trinityexteriors.com/service-area/saint-paul-mn/" target="_blank" class="btn btn-secondary">Learn More About Our Services</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="services">
+                <div class="service-card">
+                    <h2>Roof Replacement</h2>
+                    <div class="service-content">
+                        <p>When your Saint Paul roof has reached the end of its lifespan, our complete roof replacement services ensure your home gets the protection it deserves. We work with <span class="highlight">premium materials</span> designed to withstand Minnesota's extreme weather conditions.</p>
+                        
+                        <p>Our roof replacement process includes thorough inspection, removal of old materials, deck inspection and repair, installation of new underlayment, and professional installation of your chosen roofing system. We handle everything from <span class="highlight">asphalt shingles to metal roofing</span>, ensuring your investment provides decades of reliable protection.</p>
+                        
+                        <p>Trust Perfect Exteriors of Minnesota to transform your home with a beautiful, durable new roof that enhances both protection and curb appeal in Saint Paul.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Installation</h2>
+                    <div class="service-content">
+                        <p>Building a new home in Saint Paul? Our expert roof installation services ensure your new construction gets off to the right start with a properly installed, high-quality roofing system that will protect your investment for years to come.</p>
+                        
+                        <p>We specialize in <span class="highlight">new construction roofing</span>, working closely with builders and homeowners to select the perfect roofing materials for Saint Paul's climate. From traditional asphalt shingles to modern metal roofing and energy-efficient options, we have the expertise to install any roofing system.</p>
+                        
+                        <p>Our installation process follows strict industry standards and local building codes, ensuring your new roof provides maximum protection and meets all Saint Paul requirements. Quality craftsmanship and attention to detail are our hallmarks.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Repair</h2>
+                    <div class="service-content">
+                        <p>Don't let minor roofing issues become major problems. Our prompt, professional roof repair services in Saint Paul address everything from <span class="highlight">storm damage to wear and tear</span>, helping you avoid costly replacements and protect your home's interior.</p>
+                        
+                        <p>Common repairs we handle include missing or damaged shingles, flashing issues, gutter problems, leak repairs, and storm damage restoration. Our experienced technicians quickly identify the source of problems and provide lasting solutions using quality materials and proven techniques.</p>
+                        
+                        <p>Available for emergency repairs throughout Saint Paul, we understand that roofing problems can't wait. Contact Perfect Exteriors of Minnesota at the first sign of trouble to prevent minor issues from becoming expensive disasters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><strong>Perfect Exteriors of Minnesota</strong></p>
+            <p>Professional Roofing Services in Saint Paul, MN</p>
+            <p>📞 (952) 920-9520 | <a href="https://www.trinityexteriors.com/service-area/saint-paul-mn/" target="_blank" style="color: #fff;">Learn More</a></p>
+        </div>
+    </footer>
+</body>
+</html>

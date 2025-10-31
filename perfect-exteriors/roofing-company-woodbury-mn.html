@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Woodbury, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><defs><pattern id="roof" patternUnits="userSpaceOnUse" width="100" height="50"><path d="M0 50L50 0L100 50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/></pattern></defs><rect width="100%" height="100%" fill="url(%23roof)"/></svg>');
+            background-size: cover;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.1);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .cta-phone {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+
+        .cta-phone:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(231, 76, 60, 0.4);
+        }
+
+        .cta-website {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.3);
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+
+        .cta-website:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(52, 152, 219, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+
+        .service-card h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .footer h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+        }
+
+        .footer p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-phone, .cta-website {
+                font-size: 1.2rem;
+                padding: 18px 35px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .service-card {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Roofing Services in Woodbury, MN: Roof Replacement, Installation & Repair</h1>
+            <p>Professional roofing contractors serving Woodbury, Minnesota with expert roof replacement, installation, and repair services. Quality workmanship, reliable materials, and exceptional customer service for both residential and commercial properties.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Protect Your Home?</h2>
+                <p style="font-size: 1.2rem; color: #666; margin-bottom: 20px;">Contact Perfect Exteriors of Minnesota today for expert roofing services in Woodbury, MN</p>
+                <div class="cta-buttons">
+                    <a href="tel:7633437989" class="cta-phone">📞 Call (763) 343-7989</a>
+                    <a href="https://www.perfectexteriorsmn.com/quality-roofing-contractor-in-woodbury-minnesota/" target="_blank" class="cta-website">Learn More About Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan or sustained significant damage, our expert roof replacement services ensure your Woodbury home gets the protection it deserves. We use high-quality materials and proven installation techniques to deliver roofing systems that withstand Minnesota's harsh weather conditions. Our comprehensive replacement process includes thorough inspection, material selection guidance, professional installation, and complete cleanup. Trust our experienced team to transform your home with a beautiful, durable new roof that enhances both protection and curb appeal.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Installation</h2>
+                    <p>Building a new home or adding an addition in Woodbury? Our professional roof installation services provide the foundation for decades of reliable protection. We specialize in installing various roofing systems including asphalt shingles, metal roofing, and tile systems, ensuring your new roof meets local building codes and manufacturer specifications. Our skilled installers pay attention to every detail, from proper ventilation and insulation to precise flashing installation, creating a roofing system that performs optimally from day one. Experience peace of mind with our warranty-backed installation services.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Repair</h2>
+                    <p>Don't let minor roofing issues become major problems. Our prompt roof repair services in Woodbury address everything from storm damage and missing shingles to leaks and flashing issues. We provide emergency repair services to protect your home immediately, followed by comprehensive solutions that restore your roof's integrity. Our experienced technicians use quality materials and proven repair techniques to ensure long-lasting results. Whether you're dealing with ice dam damage, wind damage, or general wear and tear, we'll restore your roof's performance efficiently and affordably.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>Perfect Exteriors of Minnesota</h3>
+            <p>Professional Roofing Services in Woodbury, MN</p>
+            <p>📞 <a href="tel:7633437989">(763) 343-7989</a></p>
+            <p>🌐 <a href="https://www.perfectexteriorsmn.com/quality-roofing-contractor-in-woodbury-minnesota/" target="_blank">www.perfectexteriorsmn.com</a></p>
+            <p style="margin-top: 30px; opacity: 0.7;">Serving Woodbury and surrounding Minnesota communities with quality roofing solutions</p>
+        </div>
+    </footer>
+</body>
+</html>

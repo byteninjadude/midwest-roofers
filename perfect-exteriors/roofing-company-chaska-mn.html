@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Chaska, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header/Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="roof" patternUnits="userSpaceOnUse" width="20" height="20"><path d="M0 20L10 10L20 20" stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none"/></pattern></defs><rect width="100" height="100" fill="url(%23roof)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Introduction Section */
+        .intro-section {
+            background: white;
+            padding: 60px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 18px 35px;
+            background: white;
+            color: #e74c3c;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background: #f8f9fa;
+        }
+
+        .phone-btn {
+            background: #2ecc71 !important;
+            color: white !important;
+        }
+
+        .phone-btn:hover {
+            background: #27ae60 !important;
+            color: white !important;
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 4px solid #3498db;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+        }
+
+        .service-card h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        /* Footer CTA */
+        .footer-cta {
+            background: #2c3e50;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .footer-cta h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-item a:hover {
+            color: #2980b9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animate-fade-in">
+                <h1>Roofing Services in Chaska, MN: Roof Replacement, Installation & Repair</h1>
+                <p class="hero-subtitle">Your trusted local roofing experts providing top-quality residential and commercial roofing solutions in Chaska and surrounding areas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <p class="intro-text">
+                When it comes to protecting your most valuable investment, you need a roofing contractor you can trust. Perfect Exteriors of Minnesota has been serving Chaska, MN and the surrounding communities with exceptional roofing services for years. Our experienced team of certified professionals specializes in comprehensive roofing solutions, from complete roof replacements and new installations to emergency repairs. We understand the unique weather challenges that Minnesota homes face, and we're committed to providing durable, high-quality roofing systems that will protect your family and property for decades to come.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p class="cta-text">Don't wait until small problems become major headaches. Contact Perfect Exteriors of Minnesota today for a free consultation and estimate.</p>
+                <div class="cta-buttons">
+                    <a href="tel:(763) 343-7989" class="cta-btn phone-btn">📞 Call (763) 343-7989</a>
+                    <a href="https://www.perfectexteriorsmn.com/roofing-contractor-chaska-mn/" target="_blank" class="cta-btn">Learn More About Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Roofing Services</h2>
+            <p class="section-subtitle">Complete roofing solutions tailored to meet your specific needs and budget</p>
+            
+            <div class="services-grid">
+                <!-- Roof Replacement -->
+                <div class="service-card animate-fade-in">
+                    <div class="service-icon">🏠</div>
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan, our comprehensive roof replacement service ensures your home gets the protection it deserves. We work with premium materials including asphalt shingles, metal roofing, and tile systems. Our expert team will conduct a thorough inspection, provide detailed estimates, and execute a complete replacement with minimal disruption to your daily life. We handle everything from permits to cleanup, ensuring a stress-free experience from start to finish.</p>
+                </div>
+
+                <!-- Roof Installation -->
+                <div class="service-card animate-fade-in">
+                    <div class="service-icon">🔧</div>
+                    <h2>Roof Installation</h2>
+                    <p>Building a new home or adding an addition? Perfect Exteriors of Minnesota provides expert roof installation services for new construction projects in Chaska, MN. Our skilled craftsmen work closely with builders, architects, and homeowners to ensure proper installation of roofing systems that meet all local building codes and manufacturer specifications. We offer a wide selection of roofing materials and styles to complement your home's architecture while providing superior weather protection and energy efficiency.</p>
+                </div>
+
+                <!-- Roof Repair -->
+                <div class="service-card animate-fade-in">
+                    <div class="service-icon">⚒️</div>
+                    <h2>Roof Repair</h2>
+                    <p>Don't let small roofing issues turn into costly disasters. Our prompt roof repair services address everything from storm damage and missing shingles to leaks and ventilation problems. We offer emergency repair services and work with all insurance companies to ensure your claims are handled professionally. Our experienced technicians quickly diagnose problems and provide lasting solutions using high-quality materials and proven techniques, extending the life of your existing roof system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h3>Choose Chaska's Premier Roofing Contractor</h3>
+            <p>Licensed, insured, and committed to excellence. Get your free estimate today!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📞</span>
+                    <a href="tel:(763) 343-7989">(763) 343-7989</a>
+                </div>
+                <div class="contact-item">
+                    <span>🌐</span>
+                    <a href="https://www.perfectexteriorsmn.com/roofing-contractor-chaska-mn/" target="_blank">Visit Our Website</a>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Serving Chaska, MN & Surrounding Areas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add smooth scrolling animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.8s ease-out';
+                card.style.transitionDelay = `${index * 0.2}s`;
+                observer.observe(card);
+            });
+
+            // Add click tracking for phone number
+            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            phoneLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    console.log('Phone call initiated: ' + link.href);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in St. Michael, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin: 40px auto;
+            padding: 60px 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            color: #555;
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 50px 0;
+            box-shadow: 0 15px 30px rgba(238, 90, 36, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        .cta-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-phone {
+            background: #ffffff;
+            color: #ee5a24;
+        }
+
+        .btn-website {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .service-card h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .phone-number {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ee5a24;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                padding: 40px 20px;
+                margin: 20px auto;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .floating-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-circle:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-circle:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            top: 60%;
+            right: 10%;
+            animation-delay: 2s;
+        }
+
+        .floating-circle:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            top: 80%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+    </div>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Roofing Services in St. Michael, MN: Roof Replacement, Installation & Repair</h1>
+            
+            <div class="intro">
+                <p>When you need reliable, professional roofing services in St. Michael, Minnesota, trust the experts who understand the unique challenges of Minnesota weather. Our experienced team provides comprehensive roofing solutions with quality craftsmanship, premium materials, and exceptional customer service. From storm damage repairs to complete roof replacements, we're your trusted local roofing partner.</p>
+            </div>
+
+            <div class="cta-section">
+                <h3>Ready to Protect Your Home?</h3>
+                <p>Get a free estimate from St. Michael's trusted roofing professionals</p>
+                <div class="cta-buttons">
+                    <a href="tel:7633437989" class="btn btn-phone">
+                        📞 Call <span class="phone-number">(763) 343-7989</span>
+                    </a>
+                    <a href="https://www.perfectexteriorsmn.com/roof-contractor-st-michael-mn/" target="_blank" class="btn btn-website">
+                        🌐 Learn More Online
+                    </a>
+                </div>
+                <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">
+                    Perfect Exteriors of Minnesota - Your Local Roofing Experts
+                </p>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="service-card">
+                <div class="service-icon">🔄</div>
+                <h2>Roof Replacement</h2>
+                <p>When your roof has reached the end of its lifespan or suffered extensive damage, our complete roof replacement services ensure your home gets the protection it deserves. We work with premium materials designed to withstand Minnesota's harsh weather conditions.</p>
+                <p>Our replacement process includes thorough inspection, professional removal of old materials, deck inspection and repair, and installation of your new roofing system with proper ventilation and flashing.</p>
+                <p>Choose from a variety of high-quality roofing materials including asphalt shingles, metal roofing, and architectural shingles, all backed by comprehensive warranties.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏗️</div>
+                <h2>Roof Installation</h2>
+                <p>Building a new home or addition in St. Michael? Our expert roof installation services provide the foundation of protection your property needs. We specialize in new construction roofing with attention to every detail.</p>
+                <p>From initial design consultation to final installation, we ensure your new roof meets all local building codes and provides optimal performance. Our team coordinates seamlessly with builders and contractors.</p>
+                <p>We offer energy-efficient roofing solutions that can help reduce heating and cooling costs while providing superior weather protection for decades to come.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h2>Roof Repair</h2>
+                <p>Don't let small roofing problems become major headaches. Our prompt roof repair services address issues before they cause interior damage to your St. Michael home. We handle everything from minor leaks to storm damage repairs.</p>
+                <p>Common repairs include replacing damaged or missing shingles, fixing flashing issues, repairing gutters and downspouts, addressing ventilation problems, and emergency storm damage restoration.</p>
+                <p>Our experienced technicians provide honest assessments and quality repairs using materials that match your existing roof, ensuring seamless integration and lasting results.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

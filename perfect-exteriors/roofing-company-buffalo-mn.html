@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Buffalo, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" fill="none"><rect width="1200" height="400" fill="%23f8f9fa"/><path d="M0 300 L100 280 L200 290 L300 270 L400 280 L500 260 L600 270 L700 250 L800 260 L900 240 L1000 250 L1100 230 L1200 240 V400 H0 Z" fill="%23e9ecef"/><path d="M0 350 L150 340 L300 345 L450 335 L600 340 L750 330 L900 335 L1050 325 L1200 330 V400 H0 Z" fill="%23dee2e6"/></svg>');
+            background-size: cover;
+            color: white;
+            border-radius: 20px;
+            margin: 20px 0;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            line-height: 1.2;
+        }
+
+        .intro {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: 0 15px 40px rgba(238, 90, 82, 0.3);
+            transform: translateY(-10px);
+        }
+
+        .cta-section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .cta-phone {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .cta-phone:hover {
+            background: white;
+            color: #ee5a52;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .cta-website {
+            background: white;
+            color: #ee5a52;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+
+        .cta-website:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 4px solid #667eea;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .service-card:nth-child(2) {
+            border-top-color: #ff6b6b;
+        }
+
+        .service-card:nth-child(3) {
+            border-top-color: #4ecdc4;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        .replacement-icon {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .installation-icon {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+        }
+
+        .repair-icon {
+            background: linear-gradient(135deg, #4ecdc4, #44a08d);
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .footer-contact {
+            font-size: 1.1rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .services {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero {
+                padding: 40px 20px;
+            }
+            
+            .intro, .cta-section, .service-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <h1>Roofing Services in Buffalo, MN: Roof Replacement, Installation & Repair</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <p>When it comes to protecting your home in Buffalo, Minnesota, your roof is your first line of defense against harsh weather conditions. At Perfect Exteriors of Minnesota, we understand the unique roofing challenges that Buffalo homeowners face, from heavy snow loads to severe storms. Our experienced team of roofing professionals provides comprehensive roofing solutions including expert replacement, professional installation, and reliable repair services. We're committed to delivering exceptional craftsmanship and outstanding customer service to keep your home safe, secure, and beautiful for years to come.</p>
+        </section>
+
+        <section class="cta-section">
+            <h3>Ready to Protect Your Home?</h3>
+            <p>Don't wait for roof problems to get worse. Get your free estimate today!</p>
+            <div class="cta-buttons">
+                <a href="tel:763-343-7989" class="cta-phone">📞 Call (763) 343-7989</a>
+                <a href="https://www.perfectexteriorsmn.com/residential-roofing-contractor-buffalo-mn/" target="_blank" class="cta-website">🏠 Learn More Online</a>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="service-card">
+                <div class="service-icon replacement-icon">🔄</div>
+                <h2>Roof Replacement</h2>
+                <p>Is your Buffalo home's roof showing signs of age or weather damage? Our complete roof replacement services ensure your home gets the protection it deserves. We use premium materials designed to withstand Minnesota's challenging climate conditions.</p>
+                <p>Our replacement process includes thorough inspection, proper disposal of old materials, and installation of high-quality roofing systems that provide decades of reliable protection. We work with leading manufacturers to offer warranties that give you peace of mind.</p>
+                <p>From asphalt shingles to metal roofing, we'll help you choose the perfect roofing solution that combines durability, energy efficiency, and aesthetic appeal for your Buffalo home.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon installation-icon">🏗️</div>
+                <h2>Roof Installation</h2>
+                <p>Building a new home or adding an addition in Buffalo, MN? Our professional roof installation services ensure your new roof is built right the first time. We follow all local building codes and manufacturer specifications for optimal performance.</p>
+                <p>Our skilled installers pay attention to every detail, from proper ventilation and insulation to precise flashing and waterproofing. We understand that a properly installed roof is crucial for your home's structural integrity and energy efficiency.</p>
+                <p>Whether you're working with architects, builders, or handling the project yourself, we coordinate seamlessly to deliver exceptional results on time and within budget.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon repair-icon">🔧</div>
+                <h2>Roof Repair</h2>
+                <p>Storm damage, missing shingles, or minor leaks? Our expert roof repair services address problems quickly before they become major issues. We provide emergency repairs and comprehensive maintenance to extend your roof's lifespan.</p>
+                <p>Our experienced technicians can handle everything from simple shingle replacement to complex structural repairs. We use quality materials that match your existing roof and provide long-lasting solutions.</p>
+                <p>Don't let small roofing problems turn into costly interior damage. Contact us at the first sign of trouble for prompt, professional repair services that restore your roof's integrity and your peace of mind.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-contact">
+                <p><strong>Perfect Exteriors of Minnesota</strong></p>
+                <p>Serving Buffalo, MN and Surrounding Areas</p>
+                <p>📞 (763) 343-7989 | 🌐 perfectexteriorsmn.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Edina, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23334155" width="1200" height="600"/><polygon fill="%23475569" points="0,400 400,200 800,300 1200,100 1200,600 0,600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            line-height: 1.2;
+        }
+
+        .hero-content {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .main-content {
+            background: white;
+            margin: -50px auto 0;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro-section {
+            padding: 60px 40px 40px;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .intro-text {
+            font-size: 1.3rem;
+            color: #4b5563;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px auto;
+            max-width: 600px;
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        }
+
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .phone-number {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 15px 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #059669;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .services-section {
+            padding: 60px 40px;
+        }
+
+        .service {
+            margin-bottom: 50px;
+            padding: 40px;
+            background: #f8fafc;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid #667eea;
+        }
+
+        .service h2 {
+            color: #1e293b;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .service-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .service p {
+            color: #4b5563;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .contact-footer {
+            background: #1e293b;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact-footer h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content {
+                padding: 30px 20px;
+                margin: 0 10px;
+            }
+            
+            .intro-section, .services-section {
+                padding: 40px 20px;
+            }
+            
+            .service {
+                padding: 30px 20px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Roofing Services in Edina, MN: Roof Replacement, Installation & Repair</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="intro-section">
+                <p class="intro-text">
+                    When it comes to protecting your home in Edina, Minnesota, having a reliable and expertly installed roof is essential. Whether you're dealing with storm damage, aging materials, or planning a new construction project, Perfect Exteriors of Minnesota provides comprehensive roofing solutions tailored to the unique climate and architectural styles of the Twin Cities area.
+                </p>
+
+                <div class="cta-box">
+                    <h3>Ready to Get Started?</h3>
+                    <p>Call Perfect Exteriors of Minnesota today for expert roof repair, replacement, or installation services in Edina, MN.</p>
+                    <div class="phone-number">(763) 343-7989</div>
+                    <a href="https://www.perfectexteriorsmn.com/roofing-company-edina-minnesota/" class="cta-button">Learn More About Our Services</a>
+                </div>
+            </div>
+
+            <div class="services-section">
+                <div class="service">
+                    <h2>
+                        <div class="service-icon">🔄</div>
+                        Roof Replacement
+                    </h2>
+                    <p>
+                        Is your roof showing signs of significant wear, multiple leaks, or storm damage? Our comprehensive roof replacement services ensure your Edina home gets the protection it deserves. We work with high-quality materials designed to withstand Minnesota's harsh winters and severe weather conditions. Our experienced team handles everything from initial assessment and material selection to complete installation and cleanup, ensuring minimal disruption to your daily life while delivering exceptional results that will protect your home for decades to come.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h2>
+                        <div class="service-icon">🏗️</div>
+                        Roof Installation
+                    </h2>
+                    <p>
+                        Building a new home or adding an addition in Edina? Our expert roof installation services provide the perfect foundation for your property's protection. We specialize in a variety of roofing materials and styles, from traditional asphalt shingles to modern metal roofing systems. Our certified installers follow industry best practices and local building codes to ensure your new roof not only looks beautiful but also provides superior protection against Minnesota's variable weather patterns. Every installation comes with comprehensive warranties for your peace of mind.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h2>
+                        <div class="service-icon">🔧</div>
+                        Roof Repair
+                    </h2>
+                    <p>
+                        Don't let small roofing issues turn into major problems. Our prompt and professional roof repair services address everything from minor leaks and missing shingles to storm damage and gutter issues. We understand that roofing emergencies don't wait for convenient times, which is why we offer responsive service to Edina homeowners. Our skilled technicians quickly diagnose problems and provide long-lasting repairs using quality materials that match your existing roof. We also offer preventive maintenance services to help extend your roof's lifespan and prevent costly future repairs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-footer">
+        <div class="container">
+            <h3>Contact Perfect Exteriors of Minnesota</h3>
+            <p>Your trusted roofing partner in Edina and throughout the Twin Cities area</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📞</span>
+                    <span>(763) 343-7989</span>
+                </div>
+                <div class="contact-item">
+                    <span>🌐</span>
+                    <span>perfectexteriorsmn.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Serving Edina, MN & Surrounding Areas</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

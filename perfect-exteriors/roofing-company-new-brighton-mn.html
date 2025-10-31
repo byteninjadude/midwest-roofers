@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in New Brighton, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1d4ed8 100%);
+            color: white;
+            padding: 100px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="roof" patternUnits="userSpaceOnUse" width="20" height="20"><polygon points="0,20 10,0 20,20" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23roof)"/></svg>');
+            animation: slidePattern 20s linear infinite;
+        }
+
+        @keyframes slidePattern {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(20px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: slideInLeft 1s ease-out 0.2s both;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            animation: slideInRight 1s ease-out 0.4s both;
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 80px 0;
+            background: linear-gradient(to bottom, #f8fafc, #ffffff);
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            color: #64748b;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #dc2626, #ef4444);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin: 40px 0 60px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(220, 38, 38, 0.3);
+            transform: scale(1);
+            transition: transform 0.3s ease;
+            animation: pulse 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 20px 40px rgba(220, 38, 38, 0.3); }
+            100% { box-shadow: 0 25px 50px rgba(220, 38, 38, 0.4); }
+        }
+
+        .cta-section:hover {
+            transform: scale(1.02);
+        }
+
+        .cta-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .cta-subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-phone {
+            background: white;
+            color: #dc2626;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cta-phone:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            background: #f8fafc;
+        }
+
+        .cta-link {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .cta-link:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.6);
+            transform: translateY(-3px);
+        }
+
+        /* Service Sections */
+        .services {
+            display: grid;
+            gap: 60px;
+        }
+
+        .service {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: center;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .service:nth-child(even) {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .service:nth-child(even) .service-content {
+            order: 2;
+        }
+
+        .service:nth-child(even) .service-icon {
+            order: 1;
+        }
+
+        .service-icon {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .service h2 {
+            font-size: 2.5rem;
+            color: #1e293b;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .service h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+            border-radius: 2px;
+        }
+
+        .service p {
+            font-size: 1.1rem;
+            color: #64748b;
+            line-height: 1.8;
+        }
+
+        /* Contact Bar */
+        .contact-bar {
+            background: #1e293b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+            z-index: 1000;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .contact-item a {
+            color: #60a5fa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #93c5fd;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .service {
+                grid-template-columns: 1fr !important;
+                text-align: center;
+            }
+
+            .service:nth-child(even) .service-content {
+                order: 1;
+            }
+
+            .service:nth-child(even) .service-icon {
+                order: 2;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        /* Loading Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .animated {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Roofing Services in New Brighton, MN: Roof Replacement, Installation & Repair</h1>
+                <p class="hero-subtitle">Professional roofing services you can trust. Quality craftsmanship, reliable results.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="intro">
+                <p>When it comes to protecting your home in New Brighton, Minnesota, your roof is your first line of defense against the elements. At Perfect Exteriors of Minnesota, we understand the unique challenges that Minnesota weather presents to homeowners. From heavy snow loads in winter to severe storms in summer, your roof needs to be built to last. Our experienced team provides comprehensive roofing services including expert installations, reliable repairs, and complete roof replacements using only the highest quality materials and proven techniques.</p>
+            </div>
+
+            <div class="cta-section">
+                <h2 class="cta-title">Ready to Protect Your Home?</h2>
+                <p class="cta-subtitle">Get expert roofing services from New Brighton's trusted professionals</p>
+                <div class="cta-buttons">
+                    <a href="tel:+19529209520" class="cta-phone">
+                        📞 Call (952) 920-9520
+                    </a>
+                    <a href="https://www.trinityexteriors.com/service-area/new-brighton-mn/" class="cta-link" target="_blank">
+                        Learn More About Our Services
+                    </a>
+                </div>
+            </div>
+
+            <div class="services">
+                <div class="service">
+                    <div class="service-icon">🏠</div>
+                    <div class="service-content">
+                        <h2>Roof Replacement</h2>
+                        <p>When repairs aren't enough, our complete roof replacement service ensures your New Brighton home gets the protection it deserves. We work with premium materials including asphalt shingles, metal roofing, and composite options designed to withstand Minnesota's harsh weather conditions. Our experienced team handles everything from the initial inspection and material selection to the final cleanup, ensuring a smooth process from start to finish. With our comprehensive warranties and proven installation techniques, you can trust that your new roof will provide decades of reliable protection for your family and investment.</p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">🔨</div>
+                    <div class="service-content">
+                        <h2>Roof Installation</h2>
+                        <p>Building a new home or adding an addition in New Brighton? Our professional roof installation services provide the foundation of protection your property needs. We specialize in installing all types of roofing systems with meticulous attention to detail and adherence to Minnesota building codes. From proper ventilation and insulation to weather barriers and flashing, every component is installed to work together as a complete system. Our skilled installers use the latest techniques and equipment to ensure your new roof is built right the first time, providing optimal performance and longevity for years to come.</p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">🛠️</div>
+                    <div class="service-content">
+                        <h2>Roof Repair</h2>
+                        <p>Don't let minor roofing issues become major problems. Our prompt and reliable roof repair services address everything from missing shingles and damaged flashing to leak repairs and storm damage restoration. We understand that roofing emergencies don't wait for convenient times, which is why we offer responsive service to New Brighton homeowners when they need it most. Our skilled technicians quickly identify the root cause of problems and provide lasting solutions using quality materials and proven repair methods. Whether it's hail damage, wind damage, or general wear and tear, we'll restore your roof's integrity and protect your home from further damage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="contact-bar">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    📞 <a href="tel:+19529209520">(952) 920-9520</a>
+                </div>
+                <div class="contact-item">
+                    🌐 <a href="https://www.trinityexteriors.com/service-area/new-brighton-mn/" target="_blank">Visit Our Website</a>
+                </div>
+                <div class="contact-item">
+                    📍 Serving New Brighton, MN
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling and interaction effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate elements on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationDelay = '0s';
+                        entry.target.classList.add('animated');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all service sections
+            document.querySelectorAll('.service').forEach(service => {
+                observer.observe(service);
+            });
+
+            // Add click tracking for CTA buttons
+            document.querySelectorAll('.cta-phone, .cta-link').forEach(button => {
+                button.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+
+            // Add floating animation to service icons with random delays
+            document.querySelectorAll('.service-icon').forEach((icon, index) => {
+                icon.style.animationDelay = `${index * 0.5}s`;
+            });
+        });
+    </script>
+</body>
+</html>

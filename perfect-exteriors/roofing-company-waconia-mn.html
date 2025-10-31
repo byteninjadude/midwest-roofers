@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Waconia, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        /* Introduction Section */
+        .intro {
+            padding: 60px 0;
+            background: #f8fafc;
+        }
+
+        .intro-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            color: #4b5563;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b, #d97706);
+        }
+
+        .cta-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .cta h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .cta p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-phone, .btn-website {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-phone {
+            background: white;
+            color: #dc2626;
+            border: 2px solid white;
+        }
+
+        .btn-phone:hover {
+            background: transparent;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .btn-website {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-website:hover {
+            background: white;
+            color: #dc2626;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .service {
+            margin-bottom: 60px;
+            padding: 40px;
+            background: #f8fafc;
+            border-radius: 15px;
+            border-left: 5px solid #3b82f6;
+            transition: all 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            border-left-color: #dc2626;
+        }
+
+        .service h2 {
+            font-size: 2.2em;
+            color: #1e40af;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .service p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #4b5563;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            
+            .cta h2 {
+                font-size: 2em;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-phone, .btn-website {
+                width: 280px;
+                justify-content: center;
+            }
+            
+            .service {
+                padding: 25px;
+                margin-bottom: 30px;
+            }
+            
+            .service h2 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 0 40px;
+            }
+            
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Roofing Services in Waconia, MN</h1>
+                <p class="hero-subtitle">Professional Roof Replacement, Installation & Repair</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <p>When it comes to protecting your home or business in Waconia, Minnesota, you need roofing professionals you can trust. Perfect Exteriors of Minnesota has been serving the Waconia community with exceptional roofing services, combining years of expertise with top-quality materials and unmatched customer service. Whether you're dealing with storm damage, aging shingles, or planning a complete roof upgrade, our certified team delivers reliable solutions that stand the test of time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Protect Your Waconia Home?</h2>
+                <p>Don't wait for roof problems to get worse. Contact Perfect Exteriors of Minnesota today for expert roof repair, replacement, or installation services in Waconia, MN.</p>
+                <div class="cta-buttons">
+                    <a href="tel:952-920-9520" class="btn-phone">
+                        📞 Call (952) 920-9520
+                    </a>
+                    <a href="https://www.trinityexteriors.com/service-area/waconia-mn/" target="_blank" class="btn-website">
+                        🌐 Learn More Online
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="service">
+                <h2>Roof Replacement</h2>
+                <p>Is your Waconia home's roof showing signs of age or extensive damage? Our comprehensive roof replacement services provide you with a fresh start and decades of protection. We work with premium materials including asphalt shingles, metal roofing, and tile systems to ensure your new roof not only looks stunning but also withstands Minnesota's challenging weather conditions. Our experienced team handles everything from initial assessment and material selection to complete installation and cleanup, making your roof replacement project seamless and stress-free.</p>
+            </div>
+
+            <div class="service">
+                <h2>Roof Installation</h2>
+                <p>Building a new home or addition in Waconia? Perfect Exteriors of Minnesota specializes in professional roof installation for new construction projects. We work closely with builders, contractors, and homeowners to ensure your new roof is installed to the highest standards using the latest techniques and materials. Our team understands local building codes and weather requirements, ensuring your roof installation meets all regulations while providing superior protection and curb appeal for your new Waconia property.</p>
+            </div>
+
+            <div class="service">
+                <h2>Roof Repair</h2>
+                <p>Don't let minor roofing issues turn into major problems. Our expert roof repair services in Waconia address everything from loose or missing shingles and flashing problems to leak repairs and storm damage restoration. We provide fast, reliable repairs using quality materials that match your existing roof, ensuring seamless integration and lasting results. Whether you've noticed a small leak, damaged gutters, or storm-related issues, our skilled technicians will diagnose the problem and provide efficient, cost-effective solutions to keep your Waconia home protected.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

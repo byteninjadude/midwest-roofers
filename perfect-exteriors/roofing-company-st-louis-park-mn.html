@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in St. Louis Park, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .phone {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .phone:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(30, 64, 175, 0.8), rgba(59, 130, 246, 0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23374151" width="1200" height="600"/><polygon fill="%234b5563" points="0,600 200,500 400,550 600,450 800,500 1000,400 1200,450 1200,600"/><polygon fill="%236b7280" points="0,600 150,520 350,570 550,470 750,520 950,420 1200,470 1200,600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        /* Intro Section */
+        .intro {
+            padding: 60px 0;
+            background: #f8fafc;
+        }
+
+        .intro-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .intro p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 40px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .cta-content h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: #dc2626;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .cta-btn.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cta-btn.secondary:hover {
+            background: white;
+            color: #dc2626;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: #f8fafc;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 4px solid #3b82f6;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-card h2 {
+            color: #1e40af;
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-card p {
+            color: #4b5563;
+            line-height: 1.7;
+        }
+
+        .service-icon {
+            width: 40px;
+            height: 40px;
+            background: #3b82f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            color: #3b82f6;
+            margin-bottom: 15px;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #d1d5db;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: #3b82f6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
+            .header-content {
+                text-align: center;
+                gap: 15px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Perfect Exteriors of Minnesota</div>
+                <div class="header-contact">
+                    <a href="tel:+17633437989" class="phone">📞 (763) 343-7989</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Roofing Services in St. Louis Park, MN: Roof Replacement, Installation & Repair</h1>
+            <p class="hero-subtitle">Professional roofing solutions you can trust in St. Louis Park, Minnesota</p>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <p>When it comes to protecting your St. Louis Park home, nothing is more important than a reliable, well-constructed roof. At Perfect Exteriors of Minnesota, we understand the unique challenges that Minnesota weather presents to your roofing system. From harsh winters with heavy snow loads to severe summer storms, your roof needs to be built to withstand it all. Our team of experienced roofing professionals has been serving the St. Louis Park community with exceptional roofing services, including expert installation, reliable repairs, and complete roof replacements.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h3>Ready to Protect Your St. Louis Park Home?</h3>
+                <p style="margin-bottom: 25px;">Contact Perfect Exteriors of Minnesota today for roof repair, replacement, or installation services</p>
+                <div class="cta-buttons">
+                    <a href="tel:+17633437989" class="cta-btn">Call (763) 343-7989</a>
+                    <a href="https://www.perfectexteriorsmn.com/quality-roofing-contractor-in-st-louis-park-minnesota/" class="cta-btn secondary" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Roof Replacement -->
+                <div class="service-card">
+                    <h2>
+                        <div class="service-icon">🏠</div>
+                        Roof Replacement
+                    </h2>
+                    <p>When your roof has reached the end of its lifespan or has sustained significant damage, our complete roof replacement services ensure your St. Louis Park home gets the protection it deserves. We use only the highest quality materials and proven installation techniques to deliver a roof that will protect your family for decades to come. Our experienced team handles everything from tear-off to cleanup, making the process as smooth as possible for homeowners.</p>
+                </div>
+
+                <!-- Roof Installation -->
+                <div class="service-card">
+                    <h2>
+                        <div class="service-icon">🔨</div>
+                        Roof Installation
+                    </h2>
+                    <p>Building a new home or adding an addition in St. Louis Park? Our professional roof installation services provide the foundation for lasting protection. We work with a variety of roofing materials including asphalt shingles, metal roofing, and tile systems, ensuring your new roof complements your home's architecture while providing superior weather resistance. Our installations meet or exceed all local building codes and manufacturer specifications.</p>
+                </div>
+
+                <!-- Roof Repair -->
+                <div class="service-card">
+                    <h2>
+                        <div class="service-icon">🛠️</div>
+                        Roof Repair
+                    </h2>
+                    <p>Don't let small roofing problems become major headaches. Our prompt and professional roof repair services address issues before they cause serious damage to your St. Louis Park home. From missing shingles and leak repairs to storm damage restoration, our skilled technicians diagnose problems quickly and provide lasting solutions. We offer emergency repair services to protect your home when you need it most.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Perfect Exteriors of Minnesota</h3>
+                    <p>Your trusted roofing contractor serving St. Louis Park, MN and surrounding communities.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>📞 <a href="tel:+17633437989">(763) 343-7989</a></p>
+                    <p>🌐 <a href="https://www.perfectexteriorsmn.com/quality-roofing-contractor-in-st-louis-park-minnesota/" target="_blank">Visit Our Website</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <p>St. Louis Park, MN<br>Minneapolis Metro Area<br>And Surrounding Communities</p>
+                </div>
+            </div>
+            <p style="margin-top: 30px; padding-top: 30px; border-top: 1px solid #374151; color: #9ca3af;">
+                © 2025 Perfect Exteriors of Minnesota. Professional roofing services in St. Louis Park, MN.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

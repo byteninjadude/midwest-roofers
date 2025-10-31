@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Big Lake, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200"><polygon fill="%23ffffff10" points="0,200 1000,200 1000,0 0,100"/></svg>');
+            background-size: cover;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            color: #555;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 3rem 0;
+            box-shadow: 0 15px 35px rgba(231, 76, 60, 0.3);
+            position: relative;
+            overflow: hidden;
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.02); }
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-section h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #e74c3c;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            background: #f8f9fa;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .service::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .service h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .service h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .service p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .contact-footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .contact-info a {
+            color: #74b9ff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .header p {
+                font-size: 1.1rem;
+            }
+            
+            .content {
+                padding: 2rem 1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .services {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Roofing Services in Big Lake, MN: Roof Replacement, Installation & Repair</h1>
+            <p>Professional roofing solutions you can trust</p>
+        </header>
+
+        <main class="content">
+            <div class="intro">
+                When it comes to protecting your home in Big Lake, Minnesota, your roof is your first line of defense against the elements. Whether you're dealing with storm damage, aging shingles, or planning a complete home renovation, having a reliable roofing contractor is essential. At Perfect Exteriors of Minnesota, we specialize in comprehensive roofing services that keep your home safe, dry, and beautiful year-round.
+            </div>
+
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h3>Ready to Protect Your Home?</h3>
+                    <p>Don't wait until it's too late. Contact Perfect Exteriors of Minnesota today for expert roofing services in Big Lake, MN.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:7633437989" class="btn">📞 Call (763) 343-7989</a>
+                        <a href="https://www.perfectexteriorsmn.com/roofing-contractor-big-lake-mn/" class="btn" target="_blank">🌐 Learn More Online</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services">
+                <div class="service">
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan or suffered extensive damage, a complete roof replacement is often the most cost-effective long-term solution. Our experienced team provides comprehensive roof replacement services using high-quality materials designed to withstand Minnesota's harsh weather conditions. We work with leading manufacturers to ensure your new roof not only looks great but provides decades of reliable protection. From initial inspection and material selection to final cleanup, we handle every aspect of your roof replacement project with professionalism and attention to detail.</p>
+                </div>
+
+                <div class="service">
+                    <h2>Roof Installation</h2>
+                    <p>Building a new home or adding an addition? Trust Perfect Exteriors of Minnesota for expert roof installation services in Big Lake, MN. We understand that proper installation is crucial for the longevity and performance of your roofing system. Our certified installers follow industry best practices and manufacturer specifications to ensure your new roof is installed correctly the first time. We work closely with builders, architects, and homeowners to deliver roofing solutions that meet your specific needs, timeline, and budget while maintaining the highest standards of quality and safety.</p>
+                </div>
+
+                <div class="service">
+                    <h2>Roof Repair</h2>
+                    <p>Don't let minor roofing issues turn into major problems. Our prompt and reliable roof repair services address everything from missing shingles and damaged flashing to leaks and storm damage. We understand that roofing emergencies can't wait, which is why we offer quick response times and thorough assessments to identify and fix problems before they cause extensive damage to your home. Whether you need emergency repairs after a storm or routine maintenance to extend your roof's life, our skilled technicians have the expertise and tools to get the job done right.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="contact-footer">
+            <h3>Perfect Exteriors of Minnesota</h3>
+            <div class="contact-info">
+                <p>Serving Big Lake, MN and surrounding areas</p>
+                <p>Call: <a href="tel:7633437989">(763) 343-7989</a></p>
+                <p>Visit: <a href="https://www.perfectexteriorsmn.com/roofing-contractor-big-lake-mn/" target="_blank">perfectexteriorsmn.com</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

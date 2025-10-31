@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Inver Grove Heights, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23f8f9fa" width="100" height="100"/><text y="50" x="50" text-anchor="middle" dy="0.35em" font-size="14" fill="%236c757d">Roofing Background</text></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-section {
+            background: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-phone {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+        }
+
+        .cta-phone:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 107, 107, 0.4);
+        }
+
+        .cta-website {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .cta-website:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+        }
+
+        .services {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .services-header h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .service-card ul {
+            color: #666;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .service-card li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .footer-cta {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .footer-cta h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .footer-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-phone, .cta-website {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .phone-icon::before {
+            content: "📞";
+            margin-right: 8px;
+        }
+
+        .web-icon::before {
+            content: "🌐";
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Roofing Services in Inver Grove Heights, MN: Roof Replacement, Installation & Repair</h1>
+                <p>When it comes to protecting your home in Inver Grove Heights, Minnesota, your roof is your first line of defense against the harsh Midwest weather. At Perfect Exteriors of Minnesota, we understand the unique challenges that Minnesota homeowners face, from heavy snow loads to severe thunderstorms and everything in between. Our team of experienced roofing professionals has been serving the Inver Grove Heights community for years, providing top-quality roof replacement, installation, and repair services that you can trust to keep your family safe and dry.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Get Professional Roofing Services Today</h2>
+                <p>Don't wait until a small problem becomes a major headache. Contact Perfect Exteriors of Minnesota now for expert roofing services in Inver Grove Heights, MN.</p>
+                <div class="cta-buttons">
+                    <a href="tel:952-920-9520" class="cta-phone">
+                        <span class="phone-icon"></span>
+                        Call (952) 920-9520
+                    </a>
+                    <a href="https://www.trinityexteriors.com/service-area/inver-grove-heights-mn/" target="_blank" class="cta-website">
+                        <span class="web-icon"></span>
+                        Learn More Online
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="container">
+            <div class="services-header">
+                <h2>Our Comprehensive Roofing Services</h2>
+                <p>Perfect Exteriors of Minnesota offers complete roofing solutions for homeowners in Inver Grove Heights</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan or sustained significant damage, a complete roof replacement is often the most cost-effective long-term solution. Our roof replacement services in Inver Grove Heights include:</p>
+                    <ul>
+                        <li>Comprehensive roof inspection and assessment</li>
+                        <li>Complete tear-off of existing roofing materials</li>
+                        <li>Installation of new underlayment and decking as needed</li>
+                        <li>High-quality shingle or roofing material installation</li>
+                        <li>Proper ventilation system installation</li>
+                        <li>Gutter and downspout replacement when necessary</li>
+                    </ul>
+                    <p>We use only the finest roofing materials from trusted manufacturers, ensuring your new roof will protect your home for decades to come. Our experienced team follows all local building codes and manufacturer specifications for a warranty-backed installation.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Installation</h2>
+                    <p>Whether you're building a new home or adding an addition to your existing property in Inver Grove Heights, Perfect Exteriors of Minnesota provides professional roof installation services that meet the highest industry standards:</p>
+                    <ul>
+                        <li>New construction roof installation</li>
+                        <li>Addition and extension roofing</li>
+                        <li>Garage and outbuilding roof installation</li>
+                        <li>Commercial roof installation</li>
+                        <li>Multiple roofing material options (asphalt shingles, metal, slate, tile)</li>
+                        <li>Energy-efficient roofing solutions</li>
+                    </ul>
+                    <p>Our installation team works closely with builders, architects, and homeowners to ensure your new roof is installed correctly the first time. We pride ourselves on attention to detail, timely completion, and superior craftsmanship that will stand up to Minnesota's challenging weather conditions.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Repair</h2>
+                    <p>Don't let a small roofing problem turn into a major disaster. Our prompt and professional roof repair services in Inver Grove Heights address issues before they cause extensive damage to your home:</p>
+                    <ul>
+                        <li>Storm damage repair and insurance claim assistance</li>
+                        <li>Leak detection and repair</li>
+                        <li>Shingle replacement and repair</li>
+                        <li>Flashing repair and replacement</li>
+                        <li>Gutter repair and maintenance</li>
+                        <li>Emergency roofing services</li>
+                    </ul>
+                    <p>Our skilled technicians can quickly diagnose roofing problems and provide effective, lasting repairs using high-quality materials. We offer emergency repair services for urgent situations and work with your insurance company to ensure proper coverage for storm-related damage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-cta">
+        <div class="container">
+            <h3>Ready to Get Started?</h3>
+            <p>Contact Perfect Exteriors of Minnesota today for a free estimate on your roofing project in Inver Grove Heights, MN</p>
+            <div class="cta-buttons">
+                <a href="tel:952-920-9520" class="cta-phone">
+                    <span class="phone-icon"></span>
+                    Call (952) 920-9520
+                </a>
+                <a href="https://www.trinityexteriors.com/service-area/inver-grove-heights-mn/" target="_blank" class="cta-website">
+                    <span class="web-icon"></span>
+                    Visit Our Website
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Company in Robbinsdale, MN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="roof" patternUnits="userSpaceOnUse" width="10" height="10"><path d="M0,10 L5,0 L10,10 Z" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23roof)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.2em;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .intro {
+            background: white;
+            padding: 60px 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .intro p {
+            font-size: 1.3em;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .cta-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(231, 76, 60, 0.4);
+        }
+
+        .cta-content h3 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 18px 35px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .cta-button:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+
+        .cta-button.phone {
+            background: rgba(46, 204, 113, 0.9);
+        }
+
+        .cta-button.phone:hover {
+            background: rgba(46, 204, 113, 1);
+        }
+
+        .services {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .service-card h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .footer p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .service-card {
+                padding: 30px 20px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Roofing Services in Robbinsdale, MN: Roof Replacement, Installation & Repair</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="container">
+            <p>When it comes to protecting your home in Robbinsdale, Minnesota, your roof is your first line of defense against the elements. Perfect Exteriors of Minnesota has been serving the Robbinsdale community with exceptional roofing services for years, providing homeowners with reliable, professional, and affordable solutions for all their roofing needs. Whether you're dealing with storm damage, aging materials, or planning a home renovation, our experienced team delivers quality workmanship that stands the test of time.</p>
+            
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h3>Ready to Protect Your Robbinsdale Home?</h3>
+                    <p>Don't wait for small roofing problems to become major headaches. Contact Perfect Exteriors of Minnesota today!</p>
+                    <div class="cta-buttons">
+                        <a href="tel:(763) 343-7989" class="cta-button phone">📞 Call (763) 343-7989</a>
+                        <a href="https://www.perfectexteriorsmn.com/quality-roofing-contractor-in-robbinsdale-minnesota/" class="cta-button" target="_blank">🌐 Learn More Online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan or sustained significant damage, a complete roof replacement is often the best solution. Our expert team at Perfect Exteriors of Minnesota specializes in full roof replacements using high-quality materials designed to withstand Minnesota's harsh weather conditions. We work with leading manufacturers to offer you a wide selection of roofing materials, including asphalt shingles, metal roofing, and tile options. Our comprehensive replacement process includes thorough inspection, proper disposal of old materials, and installation of new roofing systems that will protect your Robbinsdale home for decades to come.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h2>Roof Installation</h2>
+                    <p>Building a new home in Robbinsdale or adding an addition to your existing property? Perfect Exteriors of Minnesota provides professional roof installation services for new construction projects. Our skilled installers understand the importance of proper roof installation from the ground up, ensuring that every component – from the decking and underlayment to the final shingles – is installed according to manufacturer specifications and local building codes. We coordinate closely with builders and homeowners to ensure your new roof is installed on schedule and meets the highest standards of quality and durability.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h2>Roof Repair</h2>
+                    <p>Don't let minor roof issues turn into major problems. Perfect Exteriors of Minnesota offers comprehensive roof repair services to address everything from missing shingles and small leaks to storm damage and general wear and tear. Our experienced technicians can quickly identify and fix roofing problems, helping you avoid costly water damage and extend the life of your existing roof. We provide emergency repair services for urgent situations and work with insurance companies to help streamline the claims process. Whether you need a simple shingle replacement or more extensive repairs, we have the expertise to restore your roof's integrity and performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>Perfect Exteriors of Minnesota</h3>
+            <p>Your Trusted Roofing Partner in Robbinsdale, MN</p>
+            <p>📞 <a href="tel:(763) 343-7989">(763) 343-7989</a></p>
+            <p>🌐 <a href="https://www.perfectexteriorsmn.com/quality-roofing-contractor-in-robbinsdale-minnesota/" target="_blank">Visit Our Website</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Anoka MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 2rem 0;
+            margin-bottom: 3rem;
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .main-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 15px 35px rgba(31, 38, 135, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            animation: fadeIn 1s ease-out 0.6s both;
+            margin-bottom: 2rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 3rem 0;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+            }
+            50% {
+                transform: scale(1.02);
+                box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+            }
+        }
+
+        .cta-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            background: white;
+            color: #FF6B6B;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            background: #f8f8f8;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: #333;
+            margin: 3rem 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #FF6B6B;
+        }
+
+        .service-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .service-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.1);
+        }
+
+        .service-section p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .main-content {
+                padding: 2rem 1.5rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Roofing Services in Anoka MN: Roof Replacement, Installation & Repair</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="intro">
+                <p>When you need reliable roofing services in Anoka, Minnesota, Perfect Exteriors of Minnesota is your trusted local contractor. We provide comprehensive roofing solutions including expert installation, professional repairs, and complete roof replacements. Our experienced team uses only the highest quality materials and proven techniques to protect your home with a roof that's built to last through Minnesota's challenging weather conditions.</p>
+            </div>
+
+            <div class="cta-section">
+                <h3>Ready to Get Started?</h3>
+                <p>Don't wait for roofing problems to get worse. Contact Perfect Exteriors of Minnesota today for expert roof repair, replacement, or installation services in Anoka, MN.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+17633437989" class="cta-button">📞 Call Now</a>
+                    <a href="https://www.perfectexteriorsmn.com/roofing-contractor-anoka-mn/" class="cta-button" target="_blank">Learn More</a>
+                </div>
+            </div>
+
+            <div class="service-section">
+                <h2>Roof Replacement</h2>
+                <p>Is your roof showing signs of significant wear, damage, or age? Our complete roof replacement services ensure your Anoka home gets the protection it deserves. We work with all major roofing materials including asphalt shingles, metal roofing, and tile systems. Our expert team handles everything from initial inspection and material selection to complete installation and cleanup, ensuring your new roof provides decades of reliable protection against Minnesota's harsh weather conditions.</p>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏠</div>
+                        <h4>Complete System Replacement</h4>
+                        <p>Full tear-off and installation with proper ventilation and insulation</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Quality Materials</h4>
+                        <p>Premium shingles and materials built for Minnesota weather</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h4>Warranty Protection</h4>
+                        <p>Comprehensive warranties on both materials and workmanship</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-section">
+                <h2>Roof Installation</h2>
+                <p>Building a new home in Anoka? Perfect Exteriors of Minnesota provides professional roof installation services for new construction projects. We work closely with builders, architects, and homeowners to ensure your new roof is installed correctly from the ground up. Our installation process follows all local building codes and manufacturer specifications, giving you confidence that your new roof will perform reliably for years to come.</p>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔨</div>
+                        <h4>New Construction</h4>
+                        <p>Expert installation for new homes and additions</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📋</div>
+                        <h4>Code Compliance</h4>
+                        <p>All work meets or exceeds local building codes</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h4>Builder Partnership</h4>
+                        <p>Seamless coordination with your construction team</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-section">
+                <h2>Roof Repair</h2>
+                <p>Don't let small roofing problems become major headaches. Our professional roof repair services address issues quickly and effectively, from missing shingles and minor leaks to storm damage and wear-related problems. We provide thorough inspections to identify all issues and offer honest, upfront pricing for all repair work. Whether you need emergency repairs or preventive maintenance, our experienced team is here to help keep your Anoka home protected.</p>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚨</div>
+                        <h4>Emergency Repairs</h4>
+                        <p>Fast response for urgent roofing emergencies</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h4>Thorough Inspections</h4>
+                        <p>Comprehensive assessment of all roofing components</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h4>Honest Pricing</h4>
+                        <p>Transparent, upfront estimates with no hidden costs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="contact-info">
+                <p><strong>Perfect Exteriors of Minnesota</strong></p>
+                <p>Your Trusted Roofing Contractor in Anoka, MN</p>
+                <p><a href="https://www.perfectexteriorsmn.com/roofing-contractor-anoka-mn/" target="_blank" style="color: #667eea; text-decoration: none;">Visit Our Website</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

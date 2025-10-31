@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Albertville, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c5aa0 0%, #1e3a5f 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="roof" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M0 20L10 10L20 20" stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none"/></pattern></defs><rect width="100" height="100" fill="url(%23roof)"/></svg>') repeat;
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        /* Intro Section */
+        .intro {
+            padding: 60px 0;
+            background: white;
+            text-align: center;
+        }
+
+        .intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b35 0%, #e55a2b 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.3);
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .cta-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .cta-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-content {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .cta-phone {
+            background: rgba(255,255,255,0.2);
+            padding: 20px 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+
+        .cta-phone:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+
+        .cta-link {
+            background: white;
+            color: #ff6b35;
+            padding: 20px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .cta-link:hover {
+            background: #f0f0f0;
+            transform: scale(1.05);
+            border-color: #ff6b35;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255,255,255,0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(102, 126, 234, 0.4);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-card h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .service-card p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            position: relative;
+            z-index: 2;
+        }
+
+        .service-card:nth-child(1) {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .service-card:nth-child(2) {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .service-card:nth-child(3) {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        /* Footer Contact */
+        .footer-contact {
+            background: #1e3a5f;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-contact h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact a {
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .service-card {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .service-card:nth-child(2) {
+            animation-delay: 0.2s;
+            animation-fill-mode: both;
+        }
+
+        .service-card:nth-child(3) {
+            animation-delay: 0.4s;
+            animation-fill-mode: both;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .cta-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-phone, .cta-link {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .service-card {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .intro, .services {
+                padding: 40px 0;
+            }
+
+            .cta-section {
+                margin: 20px 0;
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Roofing Services in Albertville, MN: Roof Replacement, Installation & Repair</h1>
+                <p class="hero-subtitle">Professional roofing solutions you can trust in Albertville and surrounding areas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <p>Perfect Exteriors of Minnesota is your trusted local roofing contractor serving Albertville, MN and the surrounding communities. With years of experience and a commitment to excellence, we provide comprehensive roofing services including replacement, installation, and repair. Our skilled team uses only the highest quality materials and proven techniques to ensure your roof protects your home for years to come. Whether you're dealing with storm damage, aging materials, or planning a new construction project, we deliver reliable, professional roofing solutions tailored to Minnesota's unique climate challenges.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Get Started?</h2>
+            <p>Contact Perfect Exteriors of Minnesota today for expert roofing services in Albertville, MN</p>
+            <div class="cta-content">
+                <a href="tel:+17633437989" class="cta-phone">📞 Call (763) 343-7989</a>
+                <a href="https://www.perfectexteriorsmn.com/roofing-contractor-albertville-mn/" target="_blank" class="cta-link">Learn More Online →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan or sustained significant damage, our comprehensive roof replacement services provide you with a completely new, durable roofing system. We work with all major roofing materials including asphalt shingles, metal roofing, and tile, ensuring your new roof is perfectly suited to Albertville's weather conditions. Our experienced team handles every aspect of the replacement process, from initial inspection and material selection to final cleanup, delivering exceptional craftsmanship that enhances your home's value and protection.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Installation</h2>
+                    <p>Building a new home or adding an addition in Albertville, MN? Our professional roof installation services ensure your new construction gets the quality roofing system it deserves from day one. We collaborate closely with builders, architects, and homeowners to install roofing systems that meet all local building codes while providing superior protection and aesthetic appeal. From traditional residential designs to modern architectural styles, our installation team has the expertise to handle projects of any size and complexity with precision and attention to detail.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Repair</h2>
+                    <p>Don't let minor roofing issues become major problems. Our prompt and reliable roof repair services address everything from missing shingles and small leaks to storm damage and gutter issues. We understand that Minnesota weather can be harsh on roofing systems, which is why we offer emergency repair services to protect your Albertville home when you need it most. Our thorough inspection process identifies all problem areas, and we provide honest, cost-effective solutions that extend your roof's lifespan while preventing costly water damage to your home's interior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Contact -->
+    <section class="footer-contact">
+        <div class="container">
+            <h3>Perfect Exteriors of Minnesota</h3>
+            <p>Your Trusted Roofing Contractor in Albertville, MN</p>
+            <p><a href="tel:+17633437989">(763) 343-7989</a></p>
+            <p><a href="https://www.perfectexteriorsmn.com/roofing-contractor-albertville-mn/" target="_blank">www.perfectexteriorsmn.com</a></p>
+        </div>
+    </section>
+</body>
+</html>

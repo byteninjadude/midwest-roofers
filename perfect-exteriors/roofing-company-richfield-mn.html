@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Richfield, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1);
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .intro {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+            color: white;
+            box-shadow: 0 15px 35px rgba(238, 90, 36, 0.3);
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .cta-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .cta-btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .cta-btn.primary {
+            background: white;
+            color: #ff6b6b;
+            box-shadow: 0 8px 25px rgba(255,255,255,0.3);
+        }
+
+        .cta-btn.secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .features {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .features h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .feature:hover {
+            background: #f8f9fa;
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+            color: #667eea;
+        }
+
+        .phone-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .phone-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .intro {
+                font-size: 1.1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Roofing Services in Richfield, MN: Roof Replacement, Installation & Repair</h1>
+            <p class="intro">
+                When you need reliable, professional roofing services in Richfield, Minnesota, Perfect Exteriors of Minnesota is your trusted local partner. We provide comprehensive roofing solutions including expert installations, quality repairs, and complete roof replacements. Our experienced team uses premium materials and proven techniques to protect your home with a roof that's built to last through Minnesota's challenging weather conditions.
+            </p>
+            
+            <div class="cta-section">
+                <h3 class="cta-title">Ready to Get Started?</h3>
+                <p>Contact Perfect Exteriors of Minnesota today for all your roofing needs in Richfield, MN</p>
+                <div class="cta-buttons">
+                    <a href="tel:763-343-7989" class="cta-btn primary">
+                        📞 Call (763) 343-7989
+                    </a>
+                    <a href="https://www.perfectexteriorsmn.com/quality-roofing-contractor-in-richfield-minnesota/" target="_blank" class="cta-btn secondary">
+                        🌐 Learn More Online
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h2>Roof Replacement</h2>
+                <p>Is your roof showing signs of age or significant damage? Our complete roof replacement services ensure your Richfield home gets a brand new, durable roofing system. We work with top-quality materials including asphalt shingles, metal roofing, and more. Our expert team handles everything from tear-off to installation, ensuring your new roof provides decades of reliable protection against Minnesota's harsh weather conditions.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔨</div>
+                <h2>Roof Installation</h2>
+                <p>Building a new home in Richfield or adding an addition? Perfect Exteriors of Minnesota provides professional roof installation services for new construction projects. We work closely with contractors and homeowners to ensure your new roof is installed correctly from the start. Our team is experienced with all roofing materials and styles, delivering quality craftsmanship that meets Minnesota building codes and exceeds industry standards.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h2>Roof Repair</h2>
+                <p>Don't let minor roofing issues become major problems. Our prompt roof repair services address leaks, damaged shingles, flashing issues, and storm damage quickly and effectively. We provide thorough inspections to identify all problem areas and deliver lasting repairs that restore your roof's integrity. From emergency leak repairs to preventive maintenance, we keep your Richfield home protected year-round.</p>
+            </div>
+        </div>
+
+        <div class="features">
+            <h3>Why Choose Perfect Exteriors of Minnesota?</h3>
+            <div class="feature-list">
+                <div class="feature">
+                    <span class="feature-icon">✅</span>
+                    <span>Licensed & Insured Roofing Contractors</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🏆</span>
+                    <span>Premium Quality Materials</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">⚡</span>
+                    <span>Fast, Reliable Service</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">💯</span>
+                    <span>100% Satisfaction Guarantee</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🌟</span>
+                    <span>Local Richfield Expertise</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📋</span>
+                    <span>Free Estimates & Inspections</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Savage, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f8ff" width="1200" height="600"/><polygon fill="%234a90e2" points="0,600 300,400 600,500 900,300 1200,400 1200,600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        .main-content {
+            background: white;
+            padding: 60px 0;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #555;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-content h3 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .cta-phone, .cta-website {
+            background: white;
+            color: #ff6b6b;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-phone:hover, .cta-website:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background: #f8f9fa;
+        }
+
+        .phone-number {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: white;
+            margin: 20px 0;
+        }
+
+        /* Service Sections */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-top: 5px solid #667eea;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer h3 {
+            margin-bottom: 20px;
+            color: #ecf0f1;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-phone, .cta-website {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        .highlight {
+            color: #ff6b6b;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Roofing Services in Savage, MN: Roof Replacement, Installation & Repair</h1>
+                <p class="hero-subtitle">Professional roofing solutions you can trust for your home and business</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Intro Section -->
+            <section class="intro-section">
+                <p class="intro-text">
+                    When it comes to protecting your home or business in Savage, MN, having a reliable roof is essential. Whether you need a complete roof replacement, new installation, or emergency repairs, our experienced team delivers exceptional quality and craftsmanship. We understand the unique weather challenges in Minnesota and use only the highest-quality materials to ensure your roof stands the test of time.
+                </p>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="container">
+                    <div class="cta-content">
+                        <h3>Ready to Get Started?</h3>
+                        <p>Don't wait until small roofing issues become major problems. Contact <span class="highlight">Perfect Exteriors of Minnesota</span> today for professional roofing services in Savage, MN.</p>
+                        <div class="phone-number">Call Us: (763) 343-7989</div>
+                        <div class="cta-buttons">
+                            <a href="tel:763-343-7989" class="cta-phone">📞 Call Now: (763) 343-7989</a>
+                            <a href="https://www.perfectexteriorsmn.com/roofing-contractor-savage-mn/" class="cta-website" target="_blank">🌐 Learn More Online</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Grid -->
+            <section class="services-grid">
+                <!-- Roof Replacement -->
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h2>Roof Replacement</h2>
+                    <p>
+                        When your roof has reached the end of its lifespan or has sustained significant damage, a complete replacement is the best solution. Our expert team will assess your current roof, recommend the best materials for your budget and needs, and complete a full replacement that enhances your home's protection and curb appeal. We work with all major roofing materials including asphalt shingles, metal roofing, and tile, ensuring a perfect fit for your Savage, MN home.
+                    </p>
+                </div>
+
+                <!-- Roof Installation -->
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h2>Roof Installation</h2>
+                    <p>
+                        Building a new home or addition in Savage, MN? Our professional roof installation services ensure your new structure is properly protected from day one. We specialize in installing various roofing systems with precision and attention to detail. From initial planning and material selection to final installation and cleanup, we handle every aspect of your new roof installation project with expertise and care.
+                    </p>
+                </div>
+
+                <!-- Roof Repair -->
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h2>Roof Repair</h2>
+                    <p>
+                        Don't let minor roof issues turn into major headaches. Our comprehensive roof repair services address everything from missing shingles and small leaks to storm damage and wear-related issues. We provide fast, reliable repairs that restore your roof's integrity and prevent further damage. Our team is experienced in identifying underlying problems and providing long-lasting solutions that save you money in the long run.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>Perfect Exteriors of Minnesota</h3>
+            <p>Your Trusted Roofing Partner in Savage, MN</p>
+            <p>Phone: (763) 343-7989</p>
+            <p>Website: <a href="https://www.perfectexteriorsmn.com/roofing-contractor-savage-mn/" style="color: #3498db;">perfectexteriorsmn.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Andover, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="roof-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect width="20" height="20" fill="none"/><path d="M0,20 L10,10 L20,20" stroke="rgba(255,255,255,0.1)" stroke-width="2" fill="none"/></pattern></defs><rect width="100" height="100" fill="url(%23roof-pattern)"/></svg>') repeat;
+            opacity: 0.1;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+        }
+        
+        .hero {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: slideInUp 1s ease-out;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero .location {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            animation: slideInUp 1s ease-out 0.2s both;
+        }
+        
+        .intro-section {
+            background: white;
+            padding: 80px 0;
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .intro-content p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #4a5568;
+            line-height: 1.8;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            color: white;
+            padding: 60px 0;
+            margin: 40px 0;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: pulse-glow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulse-glow {
+            from { box-shadow: 0 0 20px rgba(220, 38, 38, 0.5); }
+            to { box-shadow: 0 0 40px rgba(220, 38, 38, 0.8), 0 0 60px rgba(220, 38, 38, 0.3); }
+        }
+        
+        .cta-content h3 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .cta-phone, .cta-website {
+            display: inline-block;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-phone {
+            background: white;
+            color: #dc2626;
+            border: 3px solid white;
+        }
+        
+        .cta-phone:hover {
+            background: #f8f9fa;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .cta-website {
+            background: transparent;
+            color: white;
+            border: 3px solid white;
+        }
+        
+        .cta-website:hover {
+            background: white;
+            color: #dc2626;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .services-section {
+            padding: 80px 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+        
+        .service-card h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1e3a8a;
+            font-weight: 700;
+        }
+        
+        .service-card p {
+            color: #4a5568;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #3b82f6 0%, #1e3a8a 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .footer-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #3b82f6;
+        }
+        
+        .contact-info {
+            font-size: 1.1rem;
+            margin: 20px 0;
+        }
+        
+        .contact-info a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-phone, .cta-website {
+                width: 80%;
+                text-align: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .service-card {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <h1>Roofing Services in Andover, MN: Roof Replacement, Installation & Repair</h1>
+                <p class="location">Professional Roofing Solutions for Your Home</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <p>When it comes to protecting your home in Andover, Minnesota, you need roofing experts you can trust. Perfect Exteriors of Minnesota has been serving the Andover community with exceptional roofing services, combining years of experience with the highest quality materials and craftsmanship. Whether you're dealing with storm damage, aging shingles, or planning a complete roof replacement, our skilled team is here to ensure your home stays safe, dry, and beautiful for years to come.</p>
+                
+                <div class="cta-section">
+                    <div class="cta-content">
+                        <h3>Ready to Protect Your Home?</h3>
+                        <p>Get expert roofing services from Andover's most trusted professionals</p>
+                        <div class="cta-buttons">
+                            <a href="tel:952-920-9520" class="cta-phone">📞 Call (952) 920-9520</a>
+                            <a href="https://www.trinityexteriors.com/service-area/andover-mn/" target="_blank" class="cta-website">🌐 Learn More Online</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan, our complete roof replacement services will give your Andover home a fresh start. We use only premium materials and proven installation techniques to ensure your new roof provides decades of reliable protection.</p>
+                    <p>Our replacement process includes thorough inspection, material selection guidance, professional installation, and comprehensive cleanup. We work with all major roofing materials including asphalt shingles, metal roofing, and specialty materials to match your home's style and budget.</p>
+                    <p>Every roof replacement comes with our workmanship warranty and manufacturer guarantees, giving you complete peace of mind in your investment.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h2>Roof Installation</h2>
+                    <p>Building a new home in Andover? Our professional roof installation services ensure your new construction gets the protection it deserves from day one. We partner with builders and homeowners to deliver roofing systems that combine durability, energy efficiency, and aesthetic appeal.</p>
+                    <p>Our installation team is experienced with the latest roofing technologies and building codes specific to Minnesota's climate challenges. From proper ventilation systems to ice dam prevention, we build roofs that are designed to handle everything Minnesota weather can deliver.</p>
+                    <p>We coordinate seamlessly with construction schedules and provide detailed project timelines to keep your build on track.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h2>Roof Repair</h2>
+                    <p>Don't let minor roofing issues turn into major problems. Our expert roof repair services address everything from missing shingles and small leaks to storm damage and flashing issues. Quick, professional repairs can extend your roof's life and prevent costly interior damage.</p>
+                    <p>We provide emergency repair services for urgent situations and offer comprehensive inspections to identify potential problems before they become serious. Our repair work is backed by quality guarantees and uses materials that match your existing roof.</p>
+                    <p>Common repairs we handle include shingle replacement, gutter repairs, chimney flashing, ice dam removal, and ventilation improvements. No job is too small for our experienced team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Perfect Exteriors of Minnesota</h3>
+                <p>Your trusted roofing partner in Andover, MN</p>
+                <div class="contact-info">
+                    <p>📞 <a href="tel:952-920-9520">(952) 920-9520</a></p>
+                    <p>🌐 <a href="https://www.trinityexteriors.com/service-area/andover-mn/" target="_blank">Visit Our Andover Service Page</a></p>
+                </div>
+                <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.8;">
+                    Serving Andover, MN and surrounding communities with professional roofing services
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Medina, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .hero {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="roof" patternUnits="userSpaceOnUse" width="100" height="50"><path d="M0,50 L50,0 L100,50 L100,50 L0,50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/></pattern></defs><rect width="1200" height="600" fill="url(%23roof)"/></svg>');
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-intro {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            margin: -30px auto 0;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 900px;
+            position: relative;
+            z-index: 10;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .cta-section h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-btn.phone {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+        }
+
+        .cta-btn.phone:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(238, 90, 36, 0.4);
+        }
+
+        .cta-btn.website {
+            background: linear-gradient(135deg, #4834d4, #667eea);
+            color: white;
+        }
+
+        .cta-btn.website:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(72, 52, 212, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .service-section {
+            margin-bottom: 60px;
+            padding: 40px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .service-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-section h2 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .service-section h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+
+        .service-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .service-text {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .service-features {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .service-features h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .service-features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-features li {
+            padding: 8px 0;
+            color: #666;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-features li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        /* Footer CTA */
+        .footer-cta {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .footer-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-intro {
+                font-size: 1.1rem;
+            }
+
+            .cta-section {
+                margin: -20px 20px 0;
+                padding: 30px 20px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .service-section h2 {
+                font-size: 2rem;
+            }
+
+            .footer-cta h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .cta-btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Roofing Services in Medina, MN: Roof Replacement, Installation & Repair</h1>
+            <p class="hero-intro">
+                When you need reliable roofing services in Medina, Minnesota, trust the experts at Perfect Exteriors of Minnesota. 
+                We provide comprehensive roofing solutions including professional installations, expert repairs, and complete 
+                replacements using premium materials and proven techniques. Our experienced team is committed to protecting your 
+                home with quality craftsmanship and exceptional customer service.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <div class="container">
+        <div class="cta-section">
+            <h2>Ready to Get Started?</h2>
+            <p>Contact Perfect Exteriors of Minnesota today for all your roofing needs in Medina, MN</p>
+            <div class="cta-buttons">
+                <a href="tel:952-920-9520" class="cta-btn phone">
+                    📞 Call (952) 920-9520
+                </a>
+                <a href="https://www.trinityexteriors.com/service-area/medina-mn/" class="cta-btn website" target="_blank">
+                    🌐 Learn More Online
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Roof Replacement Section -->
+            <section class="service-section">
+                <h2>Roof Replacement</h2>
+                <div class="service-content">
+                    <div class="service-text">
+                        <p>
+                            Is your roof showing signs of age or storm damage? Our comprehensive roof replacement services 
+                            in Medina, MN ensure your home gets the protection it deserves. We work with premium materials 
+                            including asphalt shingles, metal roofing, and specialty materials to match your home's style 
+                            and your budget requirements.
+                        </p>
+                        <p>
+                            Our experienced team handles every aspect of the replacement process, from initial assessment 
+                            and material selection to complete installation and cleanup. We're fully licensed, insured, 
+                            and committed to delivering exceptional results that stand the test of time.
+                        </p>
+                    </div>
+                    <div class="service-features">
+                        <h3>What We Offer:</h3>
+                        <ul>
+                            <li>Complete roof system replacement</li>
+                            <li>Premium material options</li>
+                            <li>Professional assessment and planning</li>
+                            <li>Storm damage restoration</li>
+                            <li>Warranty protection</li>
+                            <li>Insurance claim assistance</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Roof Installation Section -->
+            <section class="service-section">
+                <h2>Roof Installation</h2>
+                <div class="service-content">
+                    <div class="service-features">
+                        <h3>Installation Services:</h3>
+                        <ul>
+                            <li>New construction roofing</li>
+                            <li>Addition and extension roofing</li>
+                            <li>Garage and outbuilding roofs</li>
+                            <li>Custom architectural solutions</li>
+                            <li>Energy-efficient options</li>
+                            <li>Code compliance guarantee</li>
+                        </ul>
+                    </div>
+                    <div class="service-text">
+                        <p>
+                            Building a new home or adding to your existing property in Medina? Perfect Exteriors of Minnesota 
+                            provides expert roof installation services for new construction projects. We work closely with 
+                            homeowners, contractors, and architects to ensure your new roof meets both aesthetic and 
+                            functional requirements.
+                        </p>
+                        <p>
+                            From traditional asphalt shingles to modern metal roofing systems, we install a wide variety 
+                            of roofing materials with precision and care. Our installations meet or exceed local building 
+                            codes and manufacturer specifications, giving you peace of mind and long-lasting protection.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Roof Repair Section -->
+            <section class="service-section">
+                <h2>Roof Repair</h2>
+                <div class="service-content">
+                    <div class="service-text">
+                        <p>
+                            Don't let minor roofing issues become major problems. Our professional roof repair services 
+                            in Medina, MN address everything from small leaks and missing shingles to more complex structural 
+                            issues. We provide prompt, reliable repairs that restore your roof's integrity and extend its lifespan.
+                        </p>
+                        <p>
+                            Whether you're dealing with storm damage, wear and tear, or unexpected issues, our skilled 
+                            technicians have the expertise to diagnose problems accurately and provide effective solutions. 
+                            We use quality materials and proven repair techniques to ensure lasting results.
+                        </p>
+                    </div>
+                    <div class="service-features">
+                        <h3>Common Repairs:</h3>
+                        <ul>
+                            <li>Leak detection and sealing</li>
+                            <li>Shingle replacement</li>
+                            <li>Flashing repairs</li>
+                            <li>Gutter system fixes</li>
+                            <li>Storm damage restoration</li>
+                            <li>Emergency repair services</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Protect Your Medina Home Today</h2>
+            <p>Contact Perfect Exteriors of Minnesota for expert roofing services you can trust</p>
+            <div class="cta-buttons">
+                <a href="tel:952-920-9520" class="cta-btn phone">
+                    📞 Call (952) 920-9520
+                </a>
+                <a href="https://www.trinityexteriors.com/service-area/medina-mn/" class="cta-btn website" target="_blank">
+                    🌐 Visit Our Website
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

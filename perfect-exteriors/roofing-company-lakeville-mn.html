@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Lakeville, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="roof" patternUnits="userSpaceOnUse" width="20" height="20"><polygon points="0,20 10,0 20,20" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23roof)"/></svg>');
+            animation: slidePattern 20s linear infinite;
+        }
+
+        @keyframes slidePattern {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(20px); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-intro {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-section {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 1px solid rgba(255,255,255,0.2);
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .cta-content {
+            text-align: center;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.9);
+            color: #2a5298;
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .services {
+            padding: 100px 0;
+            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            color: #2a5298;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .services h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 5px solid #2a5298;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            font-size: 1.8rem;
+            color: #2a5298;
+            margin-bottom: 20px;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .contact-bar {
+            background: linear-gradient(45deg, #2a5298, #1e3c72);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+            z-index: 100;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .phone-number {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .phone-number:hover {
+            background: rgba(255,255,255,0.2);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-intro {
+                font-size: 1.1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .service-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Roofing Services in Lakeville, MN: Roof Replacement, Installation & Repair</h1>
+            <div class="hero-intro">
+                <p>Perfect Exteriors of Minnesota is your trusted local roofing contractor serving Lakeville and surrounding communities. With years of experience and a commitment to excellence, we provide comprehensive roofing solutions for residential and commercial properties. Our skilled team delivers quality workmanship using premium materials, ensuring your roof protects your investment for years to come.</p>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2 class="cta-title">Get Your Free Roofing Estimate Today!</h2>
+                    <p>Don't wait for minor roof issues to become major problems. Contact Perfect Exteriors of Minnesota now for expert roof repair, replacement, or installation services in Lakeville, MN.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:7633437989" class="btn btn-primary">📞 Call (763) 343-7989</a>
+                        <a href="https://www.perfectexteriorsmn.com/roofing-contractor-lakeville-mn/" target="_blank" class="btn btn-secondary">Learn More Online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="container">
+            <div class="service-grid">
+                <div class="service-card">
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan or suffered extensive damage, our complete roof replacement services provide you with a brand new, durable roofing system. We work with top-quality materials including asphalt shingles, metal roofing, and tile options. Our experienced team ensures proper installation, ventilation, and weatherproofing to maximize your new roof's performance and longevity. We handle everything from old roof removal to final cleanup, making the process seamless for Lakeville homeowners.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Installation</h2>
+                    <p>Building a new home or adding an addition? Our professional roof installation services ensure your new structure is properly protected from Minnesota's harsh weather conditions. We specialize in installing various roofing materials and systems tailored to your specific needs and budget. Our team works closely with builders and homeowners to ensure timely completion and superior craftsmanship. From initial planning to final inspection, we guarantee a roof installation that meets all local building codes and exceeds industry standards.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Repair</h2>
+                    <p>Don't let minor roof problems turn into costly major repairs. Our prompt and reliable roof repair services address issues like missing shingles, leaks, storm damage, and general wear and tear. We provide emergency repair services for urgent situations and comprehensive inspections to identify potential problems before they worsen. Using high-quality materials and proven repair techniques, we restore your roof's integrity and extend its lifespan. Our repairs come with warranties for your peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="contact-bar">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📍 Serving Lakeville, MN & Surrounding Areas</span>
+                </div>
+                <div class="contact-item">
+                    <a href="tel:7633437989" class="phone-number">(763) 343-7989</a>
+                </div>
+                <div class="contact-item">
+                    <span>🏠 Perfect Exteriors of Minnesota</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

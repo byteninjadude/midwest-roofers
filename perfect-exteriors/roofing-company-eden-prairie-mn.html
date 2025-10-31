@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Eden Prairie, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="roof" patternUnits="userSpaceOnUse" width="20" height="20"><path d="M0 20L10 10L20 20" stroke="rgba(255,255,255,0.1)" stroke-width="2" fill="none"/></pattern></defs><rect width="100" height="100" fill="url(%23roof)"/></svg>');
+            opacity: 0.1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            padding: 3rem 2rem;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            color: #555;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 3rem 0;
+            box-shadow: 0 10px 30px rgba(238, 90, 36, 0.3);
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .cta-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .cta-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-phone {
+            background: white;
+            color: #ee5a24;
+            border-color: white;
+        }
+
+        .btn-phone:hover {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .btn-website {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .btn-website:hover {
+            background: white;
+            color: #ee5a24;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+
+        .service-content {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .service-content p {
+            margin-bottom: 1rem;
+        }
+
+        .service-content ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .service-content li {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .main-content {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>Roofing Services in Eden Prairie, MN: Roof Replacement, Installation & Repair</h1>
+                <p class="subtitle">Professional Roofing Solutions by Perfect Exteriors of Minnesota</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="intro">
+                <p>When it comes to protecting your Eden Prairie home, your roof is your first line of defense against Minnesota's challenging weather conditions. Perfect Exteriors of Minnesota has been serving Eden Prairie homeowners with exceptional roofing services, combining decades of experience with cutting-edge materials and techniques. Whether you need a complete roof replacement, new installation, or emergency repairs, our licensed and insured team delivers reliable, high-quality solutions that stand the test of time.</p>
+            </div>
+
+            <div class="cta-section">
+                <h3 class="cta-title">Ready to Protect Your Eden Prairie Home?</h3>
+                <p class="cta-text">Don't wait for small roofing issues to become major problems. Contact Perfect Exteriors of Minnesota today for expert roof repair, replacement, or installation services.</p>
+                <div class="cta-buttons">
+                    <a href="tel:763-343-7989" class="btn btn-phone">📞 Call (763) 343-7989</a>
+                    <a href="https://www.perfectexteriorsmn.com/roofing-company-eden-prairie-minnesota/" target="_blank" class="btn btn-website">Learn More Online</a>
+                </div>
+            </div>
+
+            <section class="services">
+                <div class="service-card">
+                    <h2>Roof Replacement</h2>
+                    <div class="service-content">
+                        <p>When repairs aren't enough, Perfect Exteriors of Minnesota provides comprehensive roof replacement services for Eden Prairie homes. Our expert team handles everything from initial assessment to final cleanup, ensuring your new roof exceeds industry standards.</p>
+                        <p><strong>Our replacement process includes:</strong></p>
+                        <ul>
+                            <li>Thorough inspection and damage assessment</li>
+                            <li>Premium material selection and consultation</li>
+                            <li>Complete tear-off and proper disposal</li>
+                            <li>Advanced underlayment and ventilation systems</li>
+                            <li>Professional installation with manufacturer warranties</li>
+                            <li>Final inspection and cleanup</li>
+                        </ul>
+                        <p>We work with top-quality materials including asphalt shingles, metal roofing, and specialty products designed to withstand Minnesota's harsh winters and severe weather conditions.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Installation</h2>
+                    <div class="service-content">
+                        <p>Building a new home in Eden Prairie? Perfect Exteriors of Minnesota specializes in new roof installations that combine aesthetic appeal with superior protection. Our installation services are perfect for new construction, additions, and major home renovations.</p>
+                        <p><strong>New installation features:</strong></p>
+                        <ul>
+                            <li>Collaborative design consultation</li>
+                            <li>Code-compliant structural assessment</li>
+                            <li>Energy-efficient roofing solutions</li>
+                            <li>Premium ventilation and insulation systems</li>
+                            <li>Seamless integration with existing architecture</li>
+                            <li>Extended manufacturer and workmanship warranties</li>
+                        </ul>
+                        <p>From traditional asphalt shingles to modern metal and tile systems, we'll help you choose the perfect roofing solution that enhances your home's value and curb appeal while providing decades of reliable protection.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Repair</h2>
+                    <div class="service-content">
+                        <p>Don't let minor roofing issues escalate into major problems. Perfect Exteriors of Minnesota offers prompt, professional roof repair services throughout Eden Prairie, addressing everything from storm damage to general wear and tear.</p>
+                        <p><strong>Common repairs we handle:</strong></p>
+                        <ul>
+                            <li>Missing, damaged, or loose shingles</li>
+                            <li>Leak detection and emergency repairs</li>
+                            <li>Flashing and gutter system repairs</li>
+                            <li>Storm and wind damage restoration</li>
+                            <li>Ventilation and insulation improvements</li>
+                            <li>Preventive maintenance and inspections</li>
+                        </ul>
+                        <p>Our experienced repair team responds quickly to emergency situations and provides thorough, lasting solutions that protect your investment. We also offer comprehensive maintenance programs to help extend your roof's lifespan and prevent costly future repairs.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📞</span>
+                    <span>(763) 343-7989</span>
+                </div>
+                <div class="contact-item">
+                    <span>🌐</span>
+                    <span>perfectexteriorsmn.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Serving Eden Prairie, MN</span>
+                </div>
+            </div>
+            <p>&copy; 2025 Perfect Exteriors of Minnesota. Licensed, Bonded & Insured.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Company in Farmington, MN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(238, 90, 36, 0.3);
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from {
+                box-shadow: 0 15px 30px rgba(238, 90, 36, 0.3);
+            }
+            to {
+                box-shadow: 0 20px 40px rgba(238, 90, 36, 0.4);
+            }
+        }
+
+        .cta-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .cta-button {
+            background: white;
+            color: #ee5a24;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background: #f8f9fa;
+        }
+
+        .phone-icon::before {
+            content: "📞";
+            font-size: 1.2rem;
+        }
+
+        .web-icon::before {
+            content: "🌐";
+            font-size: 1.2rem;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .service-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .service-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #ffd700 0%, #ffed4e 100%);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                padding: 40px 20px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .service-card {
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Roofing Services in Farmington, MN: Roof Replacement, Installation & Repair</h1>
+            <p class="intro">
+                When it comes to protecting your home in Farmington, Minnesota, your roof is your first line of defense against the elements. Our experienced roofing professionals provide comprehensive roofing solutions including expert installations, reliable repairs, and complete roof replacements. With years of serving the Farmington community, we understand the unique challenges that Minnesota weather presents and are committed to delivering exceptional craftsmanship that stands the test of time.
+            </p>
+        </div>
+
+        <div class="cta-section">
+            <h3>Ready to Protect Your Farmington Home?</h3>
+            <p>Don't wait for small roofing issues to become major problems. Contact Perfect Exteriors of Minnesota today for professional roof repair, replacement, or installation services.</p>
+            <div class="cta-buttons">
+                <a href="tel:952-920-9520" class="cta-button">
+                    <span class="phone-icon"></span>
+                    Call (952) 920-9520
+                </a>
+                <a href="https://www.trinityexteriors.com/service-area/farmington-mn/" target="_blank" class="cta-button">
+                    <span class="web-icon"></span>
+                    Learn More Online
+                </a>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="service-card">
+                <h2>
+                    <span class="service-icon">🏠</span>
+                    Roof Replacement
+                </h2>
+                <p>
+                    When your roof has reached the end of its lifespan, our complete roof replacement services ensure your Farmington home gets the protection it deserves. We work with <span class="highlight">premium materials</span> designed to withstand Minnesota's harsh winters and severe weather conditions. Our experienced team handles everything from initial assessment to final cleanup, ensuring a seamless process that minimizes disruption to your daily life while maximizing your home's value and protection.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h2>
+                    <span class="service-icon">🔨</span>
+                    Roof Installation
+                </h2>
+                <p>
+                    Building a new home in Farmington? Our professional roof installation services provide your new construction with a <span class="highlight">solid foundation</span> of protection. We specialize in various roofing materials and styles, ensuring your new roof not only protects your investment but also enhances your home's curb appeal. Our meticulous installation process follows industry best practices and local building codes, giving you peace of mind for years to come.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h2>
+                    <span class="service-icon">🔧</span>
+                    Roof Repair
+                </h2>
+                <p>
+                    Don't let minor roofing issues turn into major headaches. Our <span class="highlight">prompt and reliable</span> roof repair services address everything from missing shingles and leaks to storm damage and general wear. We understand that roofing emergencies don't wait for convenient times, which is why we're committed to providing fast, effective repairs that restore your roof's integrity and keep your Farmington family safe and dry.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

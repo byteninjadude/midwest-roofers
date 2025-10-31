@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Prior Lake, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon fill="%23ffffff08" points="0,100 100,0 100,100"/></svg>');
+            background-size: 200px 200px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .intro-section {
+            background: white;
+            padding: 60px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #555;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+        }
+
+        .cta-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta-phone {
+            background: white;
+            color: #dc2626;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255,255,255,0.3);
+        }
+
+        .cta-phone:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255,255,255,0.4);
+        }
+
+        .cta-website {
+            background: transparent;
+            color: white;
+            border: 3px solid white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-website:hover {
+            background: white;
+            color: #dc2626;
+            transform: translateY(-3px);
+        }
+
+        .services-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: #f8fafc;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: #3b82f6;
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .service-card h2 {
+            font-size: 1.8rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .footer {
+            background: #1e3a8a;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #93c5fd;
+        }
+
+        .footer-section p {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-phone, .cta-website {
+                width: 280px;
+                justify-content: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Roofing Services in Prior Lake, MN: Roof Replacement, Installation & Repair</h1>
+                <p class="hero-subtitle">Your Trusted Local Roofing Experts Serving Prior Lake and Surrounding Areas</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-text">
+                When it comes to protecting your home in Prior Lake, Minnesota, your roof is your first line of defense against harsh weather conditions. At Perfect Exteriors of Minnesota, we understand the unique challenges that Minnesota weather presents to homeowners. Our experienced team of roofing professionals has been serving the Prior Lake community with exceptional roofing services including installations, repairs, and complete roof replacements. We combine superior craftsmanship with premium materials to ensure your roof stands the test of time.
+            </div>
+
+            <div class="cta-section">
+                <div class="container">
+                    <h2 class="cta-title">Ready to Protect Your Prior Lake Home?</h2>
+                    <p class="cta-text">Get expert roofing services from Prior Lake's most trusted contractors</p>
+                    <div class="cta-buttons">
+                        <a href="tel:7633437989" class="cta-phone">
+                            📞 Call (763) 343-7989
+                        </a>
+                        <a href="https://www.perfectexteriorsmn.com/roofing-contractor-prior-lake-mn/" class="cta-website" target="_blank">
+                            Learn More About Our Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan or sustained significant damage, our complete roof replacement services will restore your home's protection and value. We work with premium materials designed to withstand Minnesota's challenging weather conditions, from heavy snow loads to severe thunderstorms. Our expert team ensures proper installation techniques that maximize your new roof's longevity while improving your home's energy efficiency and curb appeal.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h2>Roof Installation</h2>
+                    <p>Building a new home or adding an addition in Prior Lake? Our professional roof installation services ensure your new structure is properly protected from day one. We specialize in various roofing materials including asphalt shingles, metal roofing, and tile systems. Our certified installers follow strict building codes and manufacturer specifications to provide you with a roof that not only looks great but performs exceptionally for decades to come.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h2>Roof Repair</h2>
+                    <p>Don't let minor roofing issues become major problems. Our comprehensive roof repair services address everything from missing shingles and flashing issues to leak repairs and storm damage restoration. We provide emergency repair services to protect your Prior Lake home when you need help most. Our thorough inspection process identifies all potential issues, ensuring long-lasting repairs that prevent future problems and extend your roof's lifespan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Perfect Exteriors of Minnesota</h3>
+                    <p>Your trusted roofing contractor serving Prior Lake, MN and surrounding communities with excellence and integrity.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>Phone: (763) 343-7989<br>
+                    Serving Prior Lake, MN and surrounding areas</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <p>Roof Replacement • Roof Installation • Roof Repair • Emergency Services</p>
+                </div>
+            </div>
+            <p>&copy; 2025 Perfect Exteriors of Minnesota. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

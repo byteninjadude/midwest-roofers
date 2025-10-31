@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Monticello, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .phone {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .phone:hover {
+            color: #c0392b;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(52, 73, 94, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%234a90e2" width="1200" height="600"/><polygon fill="%23357abd" points="0,400 400,300 800,350 1200,250 1200,600 0,600"/><polygon fill="%232c5aa0" points="0,500 300,400 600,450 900,350 1200,400 1200,600 0,600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.95;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: #e74c3c;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .cta-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: #e74c3c;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background: #f8f9fa;
+        }
+
+        .phone-btn {
+            background: #27ae60;
+            color: white;
+        }
+
+        .phone-btn:hover {
+            background: #229954;
+            color: white;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: #e74c3c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .service-card h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: #3498db;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .feature-item h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            line-height: 1.8;
+        }
+
+        .footer-section a:hover {
+            color: #e74c3c;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #34495e;
+            padding-top: 20px;
+            text-align: center;
+            color: #95a5a6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero {
+                padding: 60px 0;
+            }
+
+            .service-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Perfect Exteriors of Minnesota</div>
+                <div class="header-contact">
+                    <a href="tel:7633437989" class="phone">📞 (763) 343-7989</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Roofing Services in Monticello, MN: Roof Replacement, Installation & Repair</h1>
+            <p class="hero-subtitle">Professional Roofing Solutions You Can Trust</p>
+            <p class="intro-text">
+                When it comes to protecting your home in Monticello, Minnesota, your roof is your first line of defense against harsh weather conditions. At Perfect Exteriors of Minnesota, we provide comprehensive roofing services including expert roof replacement, professional installation, and reliable repair services. Our experienced team understands the unique challenges that Minnesota weather presents and delivers quality craftsmanship that stands the test of time.
+            </p>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Protect Your Home?</h2>
+                <p>Don't wait for roof problems to worsen. Contact Perfect Exteriors of Minnesota today for professional roofing services in Monticello, MN.</p>
+                <div class="cta-buttons">
+                    <a href="tel:7633437989" class="cta-btn phone-btn">📞 Call (763) 343-7989</a>
+                    <a href="https://www.perfectexteriorsmn.com/roofing-contractor-monticello-mn/" target="_blank" class="cta-btn">Learn More About Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Roofing Services</h2>
+            <p class="section-subtitle">Complete roofing solutions for residential and commercial properties in Monticello, MN</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h2>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan or sustained significant damage, our complete roof replacement service ensures your home gets the protection it deserves. We use high-quality materials and proven installation techniques to deliver a roof that will protect your home for decades. Our team handles everything from the initial inspection and material selection to final cleanup, making the process stress-free for homeowners in Monticello.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h2>Roof Installation</h2>
+                    <p>Whether you're building a new home or adding an addition, proper roof installation is crucial for long-term performance and protection. Our skilled installers follow industry best practices and manufacturer guidelines to ensure your new roof is installed correctly the first time. We work with a variety of roofing materials including asphalt shingles, metal roofing, and more to match your style preferences and budget requirements.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h2>Roof Repair</h2>
+                    <p>From minor leaks to storm damage, our roof repair services address problems quickly and effectively to prevent further damage to your home. We provide thorough inspections to identify all issues and offer honest assessments of whether repair or replacement is the most cost-effective solution. Our emergency repair services are available to protect your home when unexpected damage occurs, giving you peace of mind during Minnesota's unpredictable weather.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Perfect Exteriors of Minnesota?</h2>
+            <p class="section-subtitle">Your trusted roofing partner in Monticello, MN</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Local Expertise</h3>
+                    <p>We understand Minnesota weather and building codes</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Quality Materials</h3>
+                    <p>Premium roofing materials from trusted manufacturers</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💼</div>
+                    <h3>Licensed & Insured</h3>
+                    <p>Fully licensed and insured for your protection</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⏰</div>
+                    <h3>Emergency Services</h3>
+                    <p>Available for urgent roofing repairs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Perfect Exteriors of Minnesota</h3>
+                    <p>Your trusted roofing contractor serving Monticello, MN and surrounding areas. We provide comprehensive roofing services with a commitment to quality and customer satisfaction.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>📞 Phone: (763) 343-7989</p>
+                    <p>🌐 Website: <a href="https://www.perfectexteriorsmn.com/roofing-contractor-monticello-mn/" target="_blank">perfectexteriorsmn.com</a></p>
+                    <p>📍 Serving Monticello, MN</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p>• Roof Replacement</p>
+                    <p>• Roof Installation</p>
+                    <p>• Roof Repair</p>
+                    <p>• Emergency Roofing</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Perfect Exteriors of Minnesota. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

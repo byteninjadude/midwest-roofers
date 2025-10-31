@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services in Blaine, MN: Roof Replacement, Installation & Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><path d="M0 300L100 250L200 280L300 200L400 240L500 180L600 220L700 160L800 200L900 140L1000 180L1100 120L1200 160V600H0Z" fill="rgba(255,255,255,0.1)"/></svg>');
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: slideInDown 1s ease-out;
+        }
+
+        .hero-intro {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: slideInUp 1s ease-out 0.3s both;
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-section {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+            text-align: center;
+            animation: fadeIn 1s ease-out 0.6s both;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            box-shadow: 0 10px 30px rgba(238, 90, 36, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(45deg, #4834d4, #686de0);
+            color: white;
+            box-shadow: 0 10px 30px rgba(72, 52, 212, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .main-content {
+            background: white;
+            margin: -50px 0 0 0;
+            border-radius: 30px 30px 0 0;
+            padding: 80px 0 60px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .services {
+            padding: 4rem 0;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b6b, #4834d4, #00d2d3);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+        }
+
+        .service-card h2 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .service-card h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b6b, #4834d4);
+            border-radius: 2px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .contact-footer {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .contact-footer h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .phone-number {
+            color: #ff6b6b;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-intro {
+                font-size: 1.1rem;
+            }
+            
+            .cta-section {
+                padding: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .service-card {
+                padding: 2rem;
+                margin: 2rem 0;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Roofing Services in Blaine, MN: Roof Replacement, Installation & Repair</h1>
+                <p class="hero-intro">
+                    When it comes to protecting your home in Blaine, Minnesota, you need roofing experts you can trust. 
+                    Perfect Exteriors of Minnesota brings years of experience, quality craftsmanship, and reliable service 
+                    to every roofing project. From emergency repairs to complete roof replacements, we're your local 
+                    roofing specialists committed to excellence and customer satisfaction.
+                </p>
+                
+                <div class="cta-section">
+                    <h2>Ready to Protect Your Home?</h2>
+                    <p>Don't wait for roof problems to worsen. Contact Perfect Exteriors of Minnesota today for professional roofing services in Blaine, MN!</p>
+                    <div class="cta-buttons">
+                        <a href="tel:763-343-7989" class="btn btn-primary">📞 Call (763) 343-7989</a>
+                        <a href="https://www.perfectexteriorsmn.com/roofing-contractor-blaine-mn/" target="_blank" class="btn btn-secondary">Learn More Online</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div style="font-size: 2rem;">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="services">
+                <div class="service-card">
+                    <h2>Roof Replacement</h2>
+                    <p>
+                        When your roof has reached the end of its lifespan or sustained significant damage, a complete roof replacement 
+                        is the best solution to ensure long-term protection for your Blaine home. Our experienced team at Perfect Exteriors 
+                        of Minnesota specializes in full roof replacement services, working with premium materials and proven installation 
+                        techniques. We understand that a roof replacement is a significant investment, which is why we provide detailed 
+                        assessments, transparent pricing, and warranties that give you peace of mind. From selecting the right materials 
+                        to match your home's style and budget to ensuring proper ventilation and insulation, we handle every aspect of 
+                        your roof replacement project with precision and care. Trust us to deliver a beautiful, durable roof that will 
+                        protect your family and enhance your home's value for decades to come.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Installation</h2>
+                    <p>
+                        Building a new home in Blaine, MN, or adding an addition that requires a new roof? Perfect Exteriors of Minnesota 
+                        provides expert roof installation services for new construction projects. Our skilled roofing professionals work 
+                        closely with builders, contractors, and homeowners to ensure your new roof is installed correctly from the start. 
+                        We offer a wide range of roofing materials including asphalt shingles, metal roofing, and premium architectural 
+                        options to suit your design preferences and performance requirements. Our installation process follows strict 
+                        industry standards and local building codes, ensuring your new roof meets all safety and durability requirements. 
+                        From proper deck preparation and underlayment installation to precise shingle placement and ridge ventilation, 
+                        we pay attention to every detail. Choose Perfect Exteriors for your roof installation and start your new home 
+                        or addition with the confidence that comes from superior craftsmanship and quality materials.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Roof Repair</h2>
+                    <p>
+                        Don't let minor roof problems become major headaches. Perfect Exteriors of Minnesota offers comprehensive roof 
+                        repair services to address issues quickly and effectively before they lead to costly water damage or structural 
+                        problems. Our experienced repair team can handle a wide range of roofing issues common in Blaine's climate, 
+                        including damaged or missing shingles, leaks, flashing problems, gutter issues, and storm damage. We provide 
+                        emergency repair services for urgent situations and offer thorough roof inspections to identify potential 
+                        problems before they worsen. Using high-quality materials and proven repair techniques, we ensure that your 
+                        repairs blend seamlessly with your existing roof while providing lasting protection. Whether you're dealing 
+                        with wind damage, ice dam issues, or general wear and tear, our repair specialists have the expertise to 
+                        restore your roof's integrity and extend its lifespan. Contact us for prompt, reliable roof repair services 
+                        that you can count on.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="contact-footer">
+        <div class="container">
+            <h3>Perfect Exteriors of Minnesota</h3>
+            <p>Your Trusted Roofing Partner in Blaine, MN</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📞</span>
+                    <span class="phone-number">(763) 343-7989</span>
+                </div>
+                <div class="contact-item">
+                    <span>🌐</span>
+                    <span>perfectexteriorsmn.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Serving Blaine, MN & Surrounding Areas</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for any internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effects
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Animate service cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'slideInUp 0.8s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Phone number click tracking
+        document.querySelector('a[href^="tel:"]').addEventListener('click', function() {
+            console.log('Phone number clicked - tracking call conversion');
+        });
+    </script>
+</body>
+</html>

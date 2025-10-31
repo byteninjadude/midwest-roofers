@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Company in Ramsey, MN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 60px 0;
+            text-align: center;
+            margin: 40px 20px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 3.2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .intro {
+            font-size: 1.3rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 20px;
+            box-shadow: 0 15px 35px rgba(238, 90, 36, 0.3);
+            transform: translateY(-10px);
+        }
+
+        .cta-section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .btn-phone, .btn-website {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-phone {
+            background: white;
+            color: #ee5a24;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-phone:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-website {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-website:hover {
+            background: white;
+            color: #ee5a24;
+            transform: translateY(-3px);
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 50px 20px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h2 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-card p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .service-card ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .service-card li {
+            padding: 8px 0;
+            color: #666;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .contact-footer {
+            background: rgba(44, 62, 80, 0.95);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            margin: 50px 20px 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-footer h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+        }
+
+        .contact-info {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .phone-number {
+            color: #3498db;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .intro {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-phone, .btn-website {
+                width: 280px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+                margin: 30px 10px;
+            }
+
+            .service-card {
+                padding: 30px 20px;
+            }
+        }
+
+        .hero-icons {
+            font-size: 4rem;
+            margin: 20px 0;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="hero-icons">🏠</div>
+            <h1>Roofing Services in Ramsey, MN: Roof Replacement, Installation & Repair</h1>
+            <p class="intro">
+                When it comes to protecting your home in Ramsey, Minnesota, your roof is your first line of defense against harsh weather conditions. At Perfect Exteriors of Minnesota, we provide comprehensive roofing services that ensure your home stays safe, dry, and beautiful year-round. With years of experience serving the Ramsey community, our skilled professionals deliver top-quality craftsmanship and exceptional customer service for all your roofing needs.
+            </p>
+        </header>
+
+        <section class="cta-section">
+            <h3>Ready to Protect Your Ramsey Home?</h3>
+            <p>Get expert roofing services from Perfect Exteriors of Minnesota today!</p>
+            <div class="cta-buttons">
+                <a href="tel:+17633437989" class="btn-phone">📞 Call (763) 343-7989</a>
+                <a href="https://www.perfectexteriorsmn.com/roofing-company-ramsey-minnesota/" target="_blank" class="btn-website">🌐 Learn More Online</a>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="service-card">
+                <h2>Roof Replacement</h2>
+                <p>When repairs aren't enough, our comprehensive roof replacement services provide your Ramsey home with a brand-new, durable roofing system. We work with premium materials and proven installation techniques to ensure your new roof will protect your family for decades to come.</p>
+                <ul>
+                    <li>Complete tear-off and replacement</li>
+                    <li>Premium roofing materials selection</li>
+                    <li>Expert installation by certified professionals</li>
+                    <li>Comprehensive warranty coverage</li>
+                    <li>Free detailed estimates and consultations</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h2>Roof Installation</h2>
+                <p>Building a new home in Ramsey? Our professional roof installation services ensure your new construction project gets the quality roofing system it deserves. From design consultation to final installation, we deliver excellence at every step.</p>
+                <ul>
+                    <li>New construction roofing systems</li>
+                    <li>Custom design and material selection</li>
+                    <li>Code-compliant installation practices</li>
+                    <li>Coordination with builders and contractors</li>
+                    <li>Timely project completion</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h2>Roof Repair</h2>
+                <p>Don't let small roofing issues become major problems. Our prompt roof repair services address leaks, damaged shingles, storm damage, and other roofing concerns quickly and effectively, saving you money and protecting your Ramsey home.</p>
+                <ul>
+                    <li>Emergency roof leak repairs</li>
+                    <li>Storm damage restoration</li>
+                    <li>Shingle replacement and repairs</li>
+                    <li>Gutter and downspout services</li>
+                    <li>Preventive maintenance programs</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="contact-footer">
+            <h3>Contact Perfect Exteriors of Minnesota</h3>
+            <div class="contact-info">
+                <p>Serving Ramsey, MN and surrounding communities</p>
+                <p class="phone-number">📞 (763) 343-7989</p>
+                <p>🌐 perfectexteriorsmn.com</p>
+                <p style="margin-top: 20px; font-style: italic;">Your trusted local roofing experts in Ramsey, Minnesota</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Company in Falcon Heights, MN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="roof" patternUnits="userSpaceOnUse" width="20" height="20"><polygon points="0,20 10,0 20,20" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23roof)"/></svg>') repeat;
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: slideInFromLeft 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            animation: slideInFromRight 1s ease-out;
+        }
+
+        /* Intro Section */
+        .intro {
+            background: white;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .intro::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #1e3a8a, #3b82f6, #60a5fa);
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* CTA Section */
+        .cta-primary {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-primary::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: float 20s infinite linear;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-primary h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .cta-primary p {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 18px 35px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-phone {
+            background: white;
+            color: #dc2626;
+            border: 3px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-phone:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+            background: #f8f9fa;
+        }
+
+        .btn-website {
+            background: transparent;
+            color: white;
+            border: 3px solid white;
+        }
+
+        .btn-website:hover {
+            background: white;
+            color: #dc2626;
+            transform: translateY(-2px);
+        }
+
+        .phone-number {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        /* Services Section */
+        .services {
+            background: #f8fafc;
+            padding: 100px 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-card h2 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Footer CTA */
+        .footer-cta {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(-30px, -30px) rotate(360deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .service-card {
+                padding: 30px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Roofing Services in Falcon Heights, MN: Roof Replacement, Installation & Repair</h1>
+                <p class="hero-subtitle">Professional roofing solutions for your home or business</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <p>When you need reliable roofing services in Falcon Heights, Minnesota, Perfect Exteriors of Minnesota delivers exceptional craftsmanship and unmatched customer service. Our experienced team specializes in comprehensive roofing solutions, from emergency repairs to complete roof replacements. We understand the unique challenges that Minnesota weather presents to your roof, and we're committed to protecting your home or business with high-quality materials and expert installation techniques that stand the test of time.</p>
+        </div>
+    </section>
+
+    <!-- Primary CTA Section -->
+    <section class="cta-primary">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Protect Your Property?</h2>
+                <p>Don't wait for small problems to become major headaches. Contact Perfect Exteriors of Minnesota today!</p>
+                <div class="cta-buttons">
+                    <a href="tel:+19529209520" class="btn btn-phone">
+                        📞 <span class="phone-number">(952) 920-9520</span>
+                    </a>
+                    <a href="https://www.trinityexteriors.com/service-area/falcon-heights-mn/" target="_blank" class="btn btn-website">
+                        🌐 Learn More About Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Roofing Services</h2>
+            <p class="section-subtitle">Comprehensive roofing solutions tailored to your needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h2><span class="service-icon">🔄</span>Roof Replacement</h2>
+                    <p>When your roof has reached the end of its lifespan, our complete roof replacement services ensure your property gets the protection it deserves. We use only premium materials and employ industry-leading installation techniques to deliver a roof that will protect your investment for decades. Our team handles everything from initial assessment and material selection to final cleanup, making the replacement process smooth and stress-free for you.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2><span class="service-icon">⚒️</span>Roof Installation</h2>
+                    <p>For new construction projects or additions to existing structures, Perfect Exteriors of Minnesota provides expert roof installation services. We work with a variety of roofing materials including asphalt shingles, metal roofing, and tile systems, ensuring your new roof not only provides superior protection but also enhances your property's curb appeal and value. Our installations are backed by comprehensive warranties for your peace of mind.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2><span class="service-icon">🔧</span>Roof Repair</h2>
+                    <p>From minor leak repairs to storm damage restoration, our skilled technicians can handle any roofing repair challenge. We understand that roofing problems can't wait, which is why we offer prompt, reliable repair services to protect your property from further damage. Whether you're dealing with missing shingles, damaged flashing, or gutter issues, we'll diagnose the problem quickly and provide lasting solutions at competitive prices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Your Trusted Falcon Heights Roofing Partner</h2>
+            <p>Contact Perfect Exteriors of Minnesota for all your roofing needs</p>
+            <div class="cta-buttons">
+                <a href="tel:+19529209520" class="btn btn-phone">
+                    📞 <span class="phone-number">(952) 920-9520</span>
+                </a>
+                <a href="https://www.trinityexteriors.com/service-area/falcon-heights-mn/" target="_blank" class="btn btn-website">
+                    🌐 Visit Our Website
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
