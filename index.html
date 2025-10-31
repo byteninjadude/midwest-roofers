@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurricane Protection Products in Florida | Storm Smart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #c41e3a 0%, #8b1429 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #c41e3a 0%, #8b1429 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #c41e3a;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin: 10px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .cta-button.secondary {
+            background: transparent;
+            color: white;
+            border: 3px solid white;
+        }
+        
+        .cta-button.secondary:hover {
+            background: white;
+            color: #c41e3a;
+        }
+        
+        .intro-section {
+            padding: 60px 20px;
+            background: white;
+        }
+        
+        .intro-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 40px;
+        }
+        
+        .cta-bar {
+            background: #f8f9fa;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 4px solid #c41e3a;
+            border-bottom: 4px solid #c41e3a;
+        }
+        
+        .products-section {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 60px;
+            color: #c41e3a;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 5px solid #c41e3a;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(196,30,58,0.2);
+        }
+        
+        .product-card h3 {
+            color: #c41e3a;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .product-card h3 a {
+            color: #c41e3a;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .product-card h3 a:hover {
+            color: #8b1429;
+        }
+        
+        .product-card p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .product-link {
+            color: #c41e3a;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .product-link:hover {
+            color: #8b1429;
+            transform: translateX(5px);
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, #c41e3a 0%, #8b1429 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+        
+        .final-cta p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .phone-number {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 20px 0;
+            letter-spacing: 2px;
+        }
+        
+        .phone-number a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .phone-number {
+                font-size: 24px;
+            }
+        }
+        
+        .benefits-list {
+            list-style: none;
+            margin: 15px 0;
+        }
+        
+        .benefits-list li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .benefits-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #c41e3a;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">STORM SMART</div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Hurricane Protection Products from Storm Smart</h1>
+            <p>Real Florida grade protection for real Florida storms. Not just something you put up once and forget.</p>
+            <a href="https://www.stormsmart.com/" class="cta-button">Visit StormSmart.com</a>
+            <a href="tel:8886859680" class="cta-button secondary">Call (888) 685-9680</a>
+        </div>
+    </section>
+    
+    <section class="intro-section">
+        <div class="container">
+            <p>Storm Smart designs and installs hurricane protection systems that are actually built for Florida: hurricane screens, hurricane shutters, and hurricane resistant doors and windows. The goal is to protect the entire building envelope, not only the front window. If you live on or near the coast, or in one of Florida's high velocity wind zones, you already know that plywood, bargain panels, or products that are not tested for your area are a risk. A system approach is safer.</p>
+        </div>
+    </section>
+    
+    <section class="cta-bar">
+        <div class="container">
+            <h2 style="margin-bottom: 20px; color: #c41e3a;">Want to see all hurricane products in one place?</h2>
+            <p style="font-size: 18px; margin-bottom: 30px;">Review screens, shutters, and doors/windows on Storm Smart's site and book an in home consultation with a local rep.</p>
+            <a href="https://www.stormsmart.com/" class="cta-button">Explore Products</a>
+        </div>
+    </section>
+    
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Storm Smart Hurricane Solutions</h2>
+            
+            <div class="product-grid">
+                <!-- Hurricane Screens -->
+                <div class="product-card">
+                    <h3><a href="https://www.stormsmart.com/">Hurricane Screens</a></h3>
+                    <p>Storm Smart is known for its screen based systems that can protect patios, lanais, and large glass openings. These are ideal for Florida homes that have outdoor living areas that still need wind borne debris protection.</p>
+                    <ul class="benefits-list">
+                        <li>Permanently installed, no hauling panels</li>
+                        <li>Good for large or odd sized openings</li>
+                        <li>Can provide shade and energy savings</li>
+                        <li>Ask for wind zone and test data</li>
+                    </ul>
+                    <a href="https://www.stormsmart.com/" class="product-link">See Screen Systems →</a>
+                </div>
+                
+                <!-- Hurricane Shutters -->
+                <div class="product-card">
+                    <h3><a href="https://www.stormsmart.com/aluminum-shutters/">Hurricane Shutters</a></h3>
+                    <p>Storm Smart installs several shutter types: accordion, rolling, Bahama, and Colonial. Each solves a different problem. Rolling shutters are best for convenience. Accordion shutters are best when you need fast deployment at a reasonable cost.</p>
+                    <ul class="benefits-list">
+                        <li>Florida code focused designs</li>
+                        <li>Can cover sliders and wide glass</li>
+                        <li>Better looking than DIY panels</li>
+                        <li>Option for motorized operation</li>
+                    </ul>
+                    <a href="https://www.stormsmart.com/aluminum-shutters/" class="product-link">Compare Shutters →</a>
+                </div>
+                
+                <!-- Hurricane Resistant Doors and Windows -->
+                <div class="product-card">
+                    <h3><a href="https://www.stormsmart.com/">Hurricane Resistant Doors & Windows</a></h3>
+                    <p>Instead of covering an opening, you can replace it with an impact rated unit. This is the cleanest look. It also gives you everyday comfort, better noise control, and better energy performance.</p>
+                    <ul class="benefits-list">
+                        <li>Permanent impact protection</li>
+                        <li>No last minute deployment</li>
+                        <li>Improves curb appeal and value</li>
+                        <li>Check compatibility with other systems</li>
+                    </ul>
+                    <a href="https://www.stormsmart.com/" class="product-link">Explore Doors & Windows →</a>
+                </div>
+                
+                <!-- Why a System -->
+                <div class="product-card">
+                    <h3><a href="https://www.stormsmart.com/">Why a System, Not a Single Product</a></h3>
+                    <p>Storm Smart can install all three: screens, shutters, and impact openings. That matters because not every opening on a Florida home is the same. Upper story windows, garage doors, and patio openings each behave differently in a storm.</p>
+                    <ul class="benefits-list">
+                        <li>Match product to risk and location</li>
+                        <li>Better chance of passing inspection</li>
+                        <li>Balanced look for HOA communities</li>
+                        <li>Single vendor and single warranty</li>
+                    </ul>
+                    <a href="https://www.stormsmart.com/" class="product-link">Schedule a Walkthrough →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="final-cta">
+        <div class="container">
+            <h2>Next Step</h2>
+            <p>The weakest opening on your home is the one the storm will find. If your current plan is to put up whatever you can find in the garage, you are leaving that weak point in place. Talk to Storm Smart about a complete protection plan that covers screens, shutters, and impact doors and windows.</p>
+            <div class="phone-number">
+                <a href="tel:8886859680">📞 (888) 685-9680</a>
+            </div>
+            <p style="margin: 30px 0;">Or visit the official website to see current products, service areas, and installation details.</p>
+            <a href="https://www.stormsmart.com/" class="cta-button">Visit StormSmart.com</a>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Storm Smart. Florida's Leading Hurricane Protection Specialist.</p>
+        </div>
+    </footer>
+</body>
+</html>
